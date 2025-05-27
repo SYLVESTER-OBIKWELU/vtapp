@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unsubscribe from Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f7f7f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .unsubscribe-container {
+            background: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .unsubscribe-container h2 {
+            margin-bottom: 0.5rem;
+            color: #d32f2f;
+        }
+        .unsubscribe-container p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .unsubscribe-container input[type="email"] {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .unsubscribe-container button {
+            background: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .unsubscribe-container button:hover {
+            background: #b71c1c;
+        }
+        .success-message {
+            color: #388e3c;
+            margin-top: 1rem;
+        }
+        .error-message {
+            color: #d32f2f;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="unsubscribe-container">
+        <h2>Unsubscribe</h2>
+        <p>Enter your email address to unsubscribe from our newsletter.</p>
+        <form id="unsubscribeForm" autocomplete="off">
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Unsubscribe</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+
+            {{-- Sweet Alert --}}
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  @if (session('message'))
+  @foreach (session('message') as $msg)
+  <script>
+    window.onload = function(){
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            },
+        });
+        Toast.fire({
+            icon: "{{$msg[2]}}",
+            title: "{{$msg[1]}}",
+        });
+        }
+  </script>
+  @endforeach
+  @endif
+
+  <script>
+    window.addEventListener('alert', (event) => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+            Toast.fire({
+                icon: event.detail.icon,
+                title: event.detail.text
+            });
+        });
+    window.addEventListener('response', (event) => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+            Toast.fire({
+                icon: event.detail.icon,
+                title: event.detail.text
+            });
+        });
+
+        function deletion(event){
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This action will removed all product and orders associated with this category!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    document.getElementById('deleteBtn').click()
+
+                    const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+                }
+                });
+        }
+
+        // document.addEventListener('livewire:navigated', () => {
+        //     initFlowbite();
+        // });
+
+  </script>
+</body>
+</html>

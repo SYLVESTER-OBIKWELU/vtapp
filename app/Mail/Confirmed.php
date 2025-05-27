@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+
+class Confirmed extends Mailable
+{
+    use Queueable, SerializesModels;
+
+
+    public $data;
+
+
+    /**
+     * Create a new message instance.
+     */
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
+
+        public function build()
+    {
+        return $this->from(env('MAIL_FROM_ADDRESS'), $this->data['name'])
+                    ->subject($this->data['subject'])
+                    ->view('mail.template_admin')
+                    ->with('data', $this->data);
+    }
+
+
+}
