@@ -94,8 +94,6 @@
         </div>
         <div class="footer">
             &copy; {{env('APP_YEAR')}}, <a href="vtapp.com.ng">Virtual App Technologies.</a> All rights reserved.<br>
-            <small>If wish to unsubscribe receiving updates, please click <a href="{{route('unsubscribe')}}">here</a> to
-                unsubscribe.</small>
         </div>
     </div>
 </body>

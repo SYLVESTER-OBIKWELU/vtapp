@@ -86,16 +86,15 @@
         <div class="content">
             <p>{{$data['name']}}</p>
             <p>
-                Thank you for reaching out to us. We have received your message and will get back to you as soon as possible.
+                Thank you for reaching out to us. We have received your message and will get back to you as soon as
+                possible.
                 <br>
                 If you have any further questions, feel free to reply to this email.
             </p>
-            
+
         </div>
         <div class="footer">
             &copy; {{env('APP_YEAR')}}, <a href="vtapp.com.ng">Virtual App Technologies.</a> All rights reserved.<br>
-            <small>If wish to unsubscribe receiving updates, please click <a href="{{route('unsubscribe')}}">here</a> to
-                unsubscribe.</small>
         </div>
     </div>
 </body>
