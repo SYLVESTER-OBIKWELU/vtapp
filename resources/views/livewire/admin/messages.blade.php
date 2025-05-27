@@ -16,7 +16,7 @@
                     <div class="flex items-center space-x-4">
                         @if ($messages->count() > 0)
                         <x-message :mail="$mail">{!! nl2br(e($body)) !!}</x-message>
-                        <x-reply :reply="$reply"  :reply_id="$reply_id" :image="$image"/>
+                        <x-reply :reply="$reply" :reply_id="$reply_id" :image="$image" />
                         <label class="w-32 text-sm font-medium text-gray-700 dark:text-white">Per Page</label>
                         <select wire:model.live='perPage'
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
@@ -41,6 +41,9 @@
                                 <th scope="col"
                                     class="px-4 py-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     IP ADDRESS</th>
+                                <th scope="col"
+                                    class="px-4 py-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    NAME</th>
                                 <th scope="col"
                                     class="px-4 py-3 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     EMAIL</th>
@@ -75,6 +78,7 @@
                                     {{$count++}}
                                 </td>
                                 <td class="px-4 py-3">{{$message->ip}}</td>
+                                <td class="px-4 py-3">{{$message->name}}</td>
                                 <td class="px-4 py-3">{{$message->email}}</td>
                                 <td class="px-4 py-3">{{$message->subject}}</td>
                                 <td class="px-4 py-3">
