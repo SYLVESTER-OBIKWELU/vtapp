@@ -236,7 +236,7 @@
                 <div class="signature-section">
                     <p class="signature-text">Best regards,</p>
                     <p class="signature-name">The {{env('APP_NAME')}} Team</p>
-                    <p class="signature-title">Virtual App Technologies</p>
+                    <p class="signature-title">Virtual Tech Applications</p>
                 </div>
             </div>
 

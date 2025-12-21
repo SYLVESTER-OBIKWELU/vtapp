@@ -3,7 +3,7 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="{{route('home')}}" class="logo d-flex align-items-center">
-          <span class="sitename"><img src="{{asset('home/img/logo.png')}}" alt="" width="100px" height="150px" ></span>
+          <span class="sitename"><img src="{{asset('home/img/logo.png')}}" alt="" width="100px" height="150px"></span>
         </a>
         <div class="footer-contact pt-3">
           <p>Awka, Anambra State</p>
@@ -70,7 +70,7 @@
     </p>
     <div class="credits">
       Designed by
-      <a href="https://vtapp.com.ng/">Virtual App Technologies</a>
+      <a href="https://vtapp.com.ng/">Virtual Tech Applications</a>
     </div>
   </div>
 </footer>
