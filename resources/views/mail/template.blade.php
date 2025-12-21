@@ -244,8 +244,7 @@
             <div class="footer">
                 <img src="https://vtapp.com.ng/home/img/logo_vtapp.png" alt="{{env('APP_NAME')}}" class="footer-logo">
                 <p class="footer-text">
-                    &copy; {{env('APP_YEAR')}} <a href="https://vtapp.com.ng" class="footer-link">Virtual App
-                        Technologies</a>
+                    &copy; {{env('APP_YEAR')}} <a href="https://vtapp.com.ng" class="footer-link">Virtual Tech Applications</a>
                 </p>
 
                 <div class="footer-contact">
