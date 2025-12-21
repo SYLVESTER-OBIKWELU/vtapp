@@ -203,7 +203,8 @@
                 </p>
                 <p class="text-gray-500 text-sm">
                     Designed by <a href="https://vtapp.com.ng/"
-                        class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Virtual Tech Applications</a>
+                        class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Virtual Tech
+                        Applications</a>
                 </p>
             </div>
         </div>
