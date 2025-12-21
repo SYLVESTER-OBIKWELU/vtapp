@@ -46,7 +46,21 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="flex-1 overflow-y-auto p-6">
+    <style>
+        .scrollbar-hidden {
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE 10+ */
+        }
+
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+    </style>
+
+    <nav class="flex-1 overflow-y-auto p-6 scrollbar-hidden">
         <ul class="space-y-1">
             <li>
                 <a href="#hero"

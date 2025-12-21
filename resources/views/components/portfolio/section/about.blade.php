@@ -37,7 +37,7 @@
 
                     <!-- Main Image Container -->
                     <div class="relative overflow-hidden rounded-2xl" data-tilt>
-                        <img src="{{ asset('portfolio/assets/img/about.jpg') }}" alt="Profile"
+                        <img src="{{ asset('portfolio/img/Portfolio_side.jpg') }}" alt="Profile"
                             class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
 
                         <!-- Overlay -->
