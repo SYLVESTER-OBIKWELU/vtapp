@@ -1,49 +1,106 @@
-<header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-    >
-      <a href="{{route('home')}}" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{{asset('home/img/logo.png')}}" alt=""> 
-        <h1 class="sitename">VTAPP</h1>
+<header id="header" class="header-modern fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="{{route('home')}}" class="flex items-center gap-3 group" data-magnetic>
+        <div class="relative">
+          <img src="{{asset('home/img/logo.png')}}" alt="VTAPP Logo"
+            class="h-12 w-auto transition-transform duration-300 group-hover:scale-110">
+          <div
+            class="absolute -inset-2 bg-cyan-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+        </div>
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          VTAPP
+        </h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="{{route('portfolio')}}">Portfolio</a></li>
-          {{-- <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="dropdown">
-            <a href="#"
-              ><span>Dropdown</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i
-            ></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown">
-                <a href="#"
-                  ><span>Deep Dropdown</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> --}}
-          <li><a href="#contact">Contact</a></li>
+      <!-- Desktop Navigation -->
+      <nav id="navmenu" class="hidden lg:flex items-center">
+        <ul class="flex items-center gap-1">
+          <li>
+            <a href="#hero"
+              class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
+              <span class="relative z-10">Home</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#about"
+              class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
+              <span class="relative z-10">About</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#features"
+              class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
+              <span class="relative z-10">Features</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+            </a>
+          </li>
+          <li>
+            <a href="{{route('portfolio')}}"
+              class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
+              <span class="relative z-10">Portfolio</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="ml-4 px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-0.5 transition-all duration-300"
+              data-ripple>
+              Contact Us
+            </a>
+          </li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button
+        class="mobile-nav-toggle lg:hidden w-10 h-10 flex items-center justify-center text-white hover:text-cyan-400 transition-colors duration-300">
+        <i class="bi bi-list text-2xl"></i>
+      </button>
     </div>
-  </header>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-menu lg:hidden">
+    <ul class="flex flex-col gap-2">
+      <li>
+        <a href="#hero"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#about"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#features"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
+          Features
+        </a>
+      </li>
+      <li>
+        <a href="{{route('portfolio')}}"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
+          Portfolio
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#contact"
+          class="block px-4 py-3 text-center text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

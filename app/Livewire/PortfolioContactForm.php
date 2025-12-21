@@ -2,7 +2,15 @@
 
 namespace App\Livewire;
 
+use App\Mail\Confirmed;
+use App\Mail\ThankYou;
+use App\Models\Contact;
+use App\Models\Visitor;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Jenssegers\Agent\Agent;
 use Livewire\Component;
+use Stevebauman\Location\Facades\Location;
 
 class PortfolioContactForm extends Component
 {
@@ -14,7 +22,7 @@ class PortfolioContactForm extends Component
 
     public function mount(){
         $agent = new Agent();
-        $ip = Request::ip();
+        $ip = request()->ip();
         $device = $agent->device().'-'.$agent->platform().'-'.$agent->browser();
         $position = Location::get($ip);
         if ($position && isset($position->city, $position->regionName, $position->countryName)) {

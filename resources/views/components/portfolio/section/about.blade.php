@@ -1,81 +1,157 @@
 <!-- About Section -->
-<section id="about" class="about section">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
-            Behind every great project is a person who cares. That’s me. I’m
-            Sylvester, a developer who’s obsessed with smart design, clean code,
-            and clever copy. I believe in learning endlessly, laughing often,
-            and leaving things better than I found them.
-        </p>
+<section id="about" class="relative py-24 xl:ml-72 overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+    <div
+        class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl">
     </div>
-    <!-- End Section Title -->
+    <div
+        class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-purple-500/10 to-pink-500/10 rounded-full blur-3xl">
+    </div>
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-            <div class="col-lg-4">
-                <img src="{{asset('portfolio/img/Portfolio_side.jpg')}}" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-8 content">
-                <h2>PROJECT MANAGER &amp; SOFTWARE DEVELOPER.</h2>
-                <p class="fst-italic py-3">
-                    Crafting creative solutions with purpose and passion. Let’s
-                    build something exceptional.
-                </p>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Birthday:</strong> <span>30 June 2001</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Website:</strong> <span>www.vtapp.com.ng</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Phone:</strong> <span>+234 701850 8896</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>City:</strong> <span>Awka, Nigeria</span>
-                            </li>
-                        </ul>
+    <!-- Spiral Decoration -->
+    <div class="spiral-decoration absolute top-20 right-10 w-32 h-32 opacity-20"></div>
+
+    <div class="container relative mx-auto px-6 lg:px-12">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-scroll-reveal>
+            <span
+                class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-400 text-sm font-semibold tracking-wider uppercase mb-4">
+                About Me
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                Get To Know <span
+                    class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Me</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Profile Image Column -->
+            <div class="relative" data-scroll-reveal>
+                <div class="relative group">
+                    <!-- Decorative Frame -->
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500">
                     </div>
-                    <div class="col-lg-6">
-                        <ul>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>School:</strong>
-                                <span>University Of Nigeria, Nsukka</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Degree:</strong>
-                                <span>B.Sc Computer Science</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Email:</strong> <span>email@example.com</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-chevron-right"></i>
-                                <strong>Freelance:</strong> <span>Available</span>
-                            </li>
-                        </ul>
+
+                    <!-- Main Image Container -->
+                    <div class="relative overflow-hidden rounded-2xl" data-tilt>
+                        <img src="{{ asset('portfolio/assets/img/about.jpg') }}" alt="Profile"
+                            class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -right-6 glass rounded-2xl p-4 shadow-2xl">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                                <i class="bi bi-award text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white" data-counter="5">0</div>
+                                <div class="text-gray-400 text-sm">Years Experience</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="py-3">
-                    I’m a Developer with a love for blending creativity with
-                    strategy. With 4+ years of experience, I’ve worked on everything
-                    from solo passion projects to large-scale campaigns. My approach
-                    is simple: understand the goal, push boundaries, and deliver
-                    with impact.
-                </p>
+            </div>
+
+            <!-- Info Column -->
+            <div class="space-y-8" data-scroll-reveal>
+                <!-- Bio Text -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-white">Full-Stack Developer & Designer</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        I'm a passionate developer with expertise in creating stunning web applications and digital
+                        experiences. With a strong foundation in both front-end and back-end technologies, I bring ideas
+                        to life through clean code and innovative design.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        My journey in tech started with a curiosity for how things work, which evolved into a deep love
+                        for problem-solving and creating impactful digital solutions that make a difference.
+                    </p>
+                </div>
+
+                <!-- Info Grid -->
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="glass rounded-xl p-4 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex items-center gap-3">
+                            <i class="bi bi-person text-cyan-400 text-xl"></i>
+                            <div>
+                                <span class="text-gray-400 text-sm">Name</span>
+                                <p class="text-white font-medium">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex items-center gap-3">
+                            <i class="bi bi-geo-alt text-cyan-400 text-xl"></i>
+                            <div>
+                                <span class="text-gray-400 text-sm">Location</span>
+                                <p class="text-white font-medium">New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex items-center gap-3">
+                            <i class="bi bi-envelope text-cyan-400 text-xl"></i>
+                            <div>
+                                <span class="text-gray-400 text-sm">Email</span>
+                                <p class="text-white font-medium">hello@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-4 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex items-center gap-3">
+                            <i class="bi bi-calendar text-cyan-400 text-xl"></i>
+                            <div>
+                                <span class="text-gray-400 text-sm">Available</span>
+                                <p class="text-green-400 font-medium">Open to work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Row -->
+                <div class="flex flex-wrap gap-8 pt-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                            data-counter="50">0</div>
+                        <div class="text-gray-400 text-sm">Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                            data-counter="30">0</div>
+                        <div class="text-gray-400 text-sm">Happy Clients</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                            data-counter="15">0</div>
+                        <div class="text-gray-400 text-sm">Awards</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contact" class="btn-modern magnetic-btn">
+                        <span class="relative z-10 flex items-center gap-2">
+                            <i class="bi bi-chat-dots"></i>
+                            Let's Talk
+                        </span>
+                    </a>
+                    <a href="#" class="btn-outline-modern magnetic-btn">
+                        <span class="relative z-10 flex items-center gap-2">
+                            <i class="bi bi-download"></i>
+                            Download CV
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- /About Section -->

@@ -21,15 +21,18 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
 
-    <!-- Vendor CSS Files -->
-    <link href="{{asset('home/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <!-- Inter font for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
     <link href="{{asset('home/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet" />
-    <link href="{{asset('home/vendor/aos/aos.css')}}" rel="stylesheet" />
-    <link href="{{asset('home/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
     <link href="{{asset('home/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link href="{{asset('home/css/main.css')}}" rel="stylesheet" />
+    <!-- Vite Assets (Tailwind CSS & JS) -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- =======================================================
   * Template Name: Bootslander
@@ -40,30 +43,18 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="font-['Inter'] bg-slate-900 text-white antialiased">
 
     {{ $slot }}
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <a href="#" id="scroll-top" class="scroll-top-btn"><i class="bi bi-arrow-up-short text-white text-2xl"></i></a>
 
     {{-- Recaptchata --}}
     <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
-    <!-- Vendor JS Files -->
-    <script src="{{asset('home/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('home/vendor/php-email-form/validate.js')}}"></script>
-    <script src="{{asset('home/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('home/vendor/glightbox/js/glightbox.min.js')}}"></script>
-    <script src="{{asset('home/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+    <!-- Swiper JS -->
     <script src="{{asset('home/vendor/swiper/swiper-bundle.min.js')}}"></script>
-
-    <!-- Main JS File -->
-    <script src="{{asset('home/js/main.js')}}"></script>
 
     {{-- Sweet Alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

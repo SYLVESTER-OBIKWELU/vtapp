@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import '../../vendor/livewire/flux/dist/flux.css';
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -9,7 +9,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 
     --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
@@ -37,7 +39,6 @@
 }
 
 @layer base {
-
     *,
     ::after,
     ::before,
@@ -52,7 +53,7 @@
 }
 
 [data-flux-label] {
-    @apply  !mb-0 !leading-tight;
+    @apply !mb-0 !leading-tight;
 }
 
 input:focus[data-flux-control],
@@ -64,3 +65,509 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+/* ==========================================
+   CUSTOM CURSOR STYLES
+   ========================================== */
+.custom-cursor {
+    @apply fixed w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-transform duration-100;
+    mix-blend-mode: difference;
+}
+
+.cursor-follower {
+    @apply fixed w-8 h-8 border-2 border-cyan-400 rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2 transition-all duration-300;
+}
+
+.cursor-hover {
+    @apply scale-150 bg-gradient-to-r from-pink-500 to-purple-500;
+}
+
+.follower-hover {
+    @apply scale-150 border-pink-500;
+}
+
+@media (max-width: 768px) {
+    .custom-cursor,
+    .cursor-follower {
+        @apply hidden;
+    }
+}
+
+/* ==========================================
+   SCROLL REVEAL ANIMATIONS
+   ========================================== */
+[data-scroll-reveal] {
+    @apply opacity-0 translate-y-12 transition-all duration-700;
+}
+
+[data-scroll-reveal].revealed {
+    @apply opacity-100 translate-y-0;
+}
+
+[data-scroll-reveal="left"] {
+    @apply -translate-x-12 translate-y-0;
+}
+
+[data-scroll-reveal="left"].revealed {
+    @apply translate-x-0;
+}
+
+[data-scroll-reveal="right"] {
+    @apply translate-x-12 translate-y-0;
+}
+
+[data-scroll-reveal="right"].revealed {
+    @apply translate-x-0;
+}
+
+[data-scroll-reveal="scale"] {
+    @apply scale-90 translate-y-0;
+}
+
+[data-scroll-reveal="scale"].revealed {
+    @apply scale-100;
+}
+
+/* ==========================================
+   3D CARD EFFECTS
+   ========================================== */
+[data-tilt] {
+    @apply transition-transform duration-300 ease-out;
+    transform-style: preserve-3d;
+}
+
+/* ==========================================
+   RIPPLE EFFECT
+   ========================================== */
+[data-ripple] {
+    @apply relative overflow-hidden;
+}
+
+.ripple-effect {
+    @apply absolute rounded-full bg-white/30 pointer-events-none;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 0.6s ease-out forwards;
+}
+
+@keyframes ripple {
+    to {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+/* ==========================================
+   GRADIENT ANIMATIONS
+   ========================================== */
+.gradient-animate {
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* ==========================================
+   FLOATING ANIMATION
+   ========================================== */
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
+}
+
+/* ==========================================
+   PULSE GLOW EFFECT
+   ========================================== */
+.pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(6, 182, 212, 0.3),
+            0 0 10px rgba(6, 182, 212, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(6, 182, 212, 0.5),
+            0 0 40px rgba(6, 182, 212, 0.3);
+    }
+}
+
+/* ==========================================
+   SPIRAL DECORATIONS
+   ========================================== */
+.spiral-decoration {
+    @apply absolute pointer-events-none opacity-20;
+}
+
+.spiral-decoration::before {
+    content: "";
+    @apply absolute w-40 h-40 border-2 border-cyan-400 rounded-full;
+    animation: spiralRotate 20s linear infinite;
+}
+
+.spiral-decoration::after {
+    content: "";
+    @apply absolute w-60 h-60 border border-purple-400 rounded-full;
+    animation: spiralRotate 25s linear infinite reverse;
+}
+
+@keyframes spiralRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================
+   PARTICLE BACKGROUND
+   ========================================== */
+.particles {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+}
+
+.particle {
+    @apply absolute w-1 h-1 bg-cyan-400 rounded-full opacity-50;
+    animation: particleFloat 15s linear infinite;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100px);
+        opacity: 0;
+    }
+}
+
+/* ==========================================
+   GLASS MORPHISM
+   ========================================== */
+.glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}
+
+.glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/10;
+}
+
+/* ==========================================
+   NEON TEXT
+   ========================================== */
+.neon-text {
+    text-shadow: 0 0 5px rgba(6, 182, 212, 0.5), 0 0 10px rgba(6, 182, 212, 0.3),
+        0 0 20px rgba(6, 182, 212, 0.2);
+}
+
+.neon-text-pink {
+    text-shadow: 0 0 5px rgba(236, 72, 153, 0.5),
+        0 0 10px rgba(236, 72, 153, 0.3), 0 0 20px rgba(236, 72, 153, 0.2);
+}
+
+/* ==========================================
+   BUTTON STYLES
+   ========================================== */
+.btn-modern {
+    @apply relative px-8 py-4 font-semibold text-white overflow-hidden rounded-full transition-all duration-300;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+    background-size: 200% 200%;
+}
+
+.btn-modern:hover {
+    background-position: 100% 100%;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(6, 182, 212, 0.4);
+}
+
+.btn-modern::before {
+    content: "";
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, #ec4899, #f97316);
+}
+
+.btn-modern:hover::before {
+    @apply opacity-100;
+}
+
+.btn-outline-modern {
+    @apply relative px-8 py-4 font-semibold border-2 border-cyan-400 text-cyan-400 rounded-full overflow-hidden transition-all duration-300;
+}
+
+.btn-outline-modern:hover {
+    @apply text-white;
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+}
+
+.btn-outline-modern::before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 -translate-x-full transition-transform duration-300;
+}
+
+.btn-outline-modern:hover::before {
+    @apply translate-x-0;
+}
+
+.btn-outline-modern span {
+    @apply relative z-10;
+}
+
+/* ==========================================
+   CARD STYLES
+   ========================================== */
+.card-modern {
+    @apply relative p-8 rounded-2xl overflow-hidden transition-all duration-500;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.02)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.card-modern::before {
+    content: "";
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: linear-gradient(145deg, rgba(6, 182, 212, 0.1), transparent);
+}
+
+.card-modern:hover::before {
+    @apply opacity-100;
+}
+
+/* ==========================================
+   SECTION STYLES
+   ========================================== */
+.section-dark {
+    @apply relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden;
+}
+
+.section-light {
+    @apply relative bg-gradient-to-br from-gray-50 via-white to-gray-100 text-slate-900 overflow-hidden;
+}
+
+/* ==========================================
+   ICON BOX
+   ========================================== */
+.icon-box-modern {
+    @apply relative flex items-center justify-center w-16 h-16 rounded-xl transition-all duration-300;
+    background: linear-gradient(
+        135deg,
+        rgba(6, 182, 212, 0.2),
+        rgba(59, 130, 246, 0.2)
+    );
+}
+
+.icon-box-modern::before {
+    content: "";
+    @apply absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+.card-modern:hover .icon-box-modern::before {
+    @apply opacity-100;
+}
+
+.icon-box-modern i {
+    @apply relative z-10 text-2xl text-cyan-400 transition-colors duration-300;
+}
+
+.card-modern:hover .icon-box-modern i {
+    @apply text-white;
+}
+
+/* ==========================================
+   WAVE ANIMATION
+   ========================================== */
+.wave-container {
+    @apply absolute bottom-0 left-0 w-full overflow-hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    @apply relative block w-full;
+    height: 150px;
+}
+
+.wave-fill {
+    fill: #ffffff;
+}
+
+.wave-path-1 {
+    animation: waveMove 20s linear infinite;
+}
+
+.wave-path-2 {
+    animation: waveMove 15s linear infinite reverse;
+    opacity: 0.5;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ==========================================
+   PROGRESS BAR ANIMATION
+   ========================================== */
+.progress-bar-animated {
+    @apply relative h-2 bg-slate-700 rounded-full overflow-hidden;
+}
+
+.progress-bar-animated::before {
+    content: "";
+    @apply absolute inset-y-0 left-0 rounded-full;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+    animation: progressFill 1.5s ease-out forwards;
+}
+
+@keyframes progressFill {
+    from {
+        width: 0;
+    }
+}
+
+/* ==========================================
+   TIMELINE STYLES
+   ========================================== */
+.timeline {
+    @apply relative;
+}
+
+.timeline::before {
+    content: "";
+    @apply absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-400 via-blue-500 to-purple-500;
+}
+
+.timeline-item {
+    @apply relative pl-16 pb-12;
+}
+
+.timeline-item::before {
+    content: "";
+    @apply absolute left-4 top-1 w-4 h-4 rounded-full bg-cyan-400;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+}
+
+/* ==========================================
+   SCROLL TOP BUTTON
+   ========================================== */
+.scroll-top-btn {
+    @apply fixed bottom-8 right-8 w-12 h-12 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+.scroll-top-btn.visible {
+    @apply opacity-100 visible;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.4);
+}
+
+/* ==========================================
+   FORM STYLES
+   ========================================== */
+.form-input-modern {
+    @apply w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300;
+}
+
+.form-input-modern:focus {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.2);
+}
+
+/* ==========================================
+   HEADER STYLES
+   ========================================== */
+.header-modern {
+    @apply fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300;
+}
+
+.header-scrolled {
+    @apply py-2 bg-slate-900/90 backdrop-blur-lg;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   MOBILE NAV
+   ========================================== */
+@media (max-width: 1024px) {
+    .nav-menu {
+        @apply fixed top-0 right-0 w-72 h-screen bg-slate-900/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 pt-20 px-8;
+    }
+
+    .nav-open .nav-menu {
+        @apply translate-x-0;
+    }
+}
+
+/* ==========================================
+   SKILL BAR
+   ========================================== */
+.skill-bar {
+    @apply relative h-3 bg-slate-700 rounded-full overflow-hidden;
+}
+
+.skill-progress {
+    @apply absolute inset-y-0 left-0 rounded-full;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
+    transform-origin: left;
+    animation: skillGrow 1.5s ease-out forwards;
+}
+
+@keyframes skillGrow {
+    from {
+        transform: scaleX(0);
+    }
+}

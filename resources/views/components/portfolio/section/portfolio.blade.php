@@ -1,82 +1,239 @@
 <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section light-background">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>
-            "Here’s a glimpse into what I’ve built, designed, and brought to life. Each project represents not just a
-            final product, but a journey of creativity, problem-solving, and collaboration.
-        </p>
+<section id="portfolio" class="relative py-24 xl:ml-72 overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800"></div>
+
+    <!-- Decorative Orbs -->
+    <div
+        class="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-pink-500/10 to-rose-500/10 rounded-full blur-3xl">
     </div>
-    <!-- End Section Title -->
+    <div
+        class="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-violet-500/10 to-purple-500/10 rounded-full blur-3xl">
+    </div>
 
-    <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-            <!-- <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li>
-            </ul> -->
-            <!-- End Portfolio Filters -->
-
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('portfolio/img/portfolio/app-1.png')}}" class="img-fluid" alt="" />
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>The Western Exim LTD</p>
-                            <a target="_blank" href="{{asset('portfolio/img/portfolio/app-1.png')}}" title="App 1"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="https://thewesternexim.com/" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('portfolio/img/portfolio/app-2.png')}}" class="img-fluid" alt="" />
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p> Oscarmoh </p>
-                            <a target="_blank" href="{{asset('portfolio/img/portfolio/app-2.png')}}" title="Product 1"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="https://oscarmoh.com/" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('portfolio/img/portfolio/app-3.png')}}" class="img-fluid" alt="" />
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>Golf Trade</p>
-                            <a href="{{asset('portfolio/img/portfolio/app-3.png')}}" title="Branding 1"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a target="_blank" href="https://golfstrade.com/" title="More Details"
-                                class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Portfolio Item -->
-
-
-                <!-- End Portfolio Container -->
-            </div>
+    <div class="container relative mx-auto px-6 lg:px-12">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-scroll-reveal>
+            <span
+                class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/20 to-rose-500/20 text-pink-400 text-sm font-semibold tracking-wider uppercase mb-4">
+                My Work
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                Featured <span
+                    class="bg-gradient-to-r from-pink-400 to-rose-500 bg-clip-text text-transparent">Projects</span>
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">A showcase of my best work and creative projects</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto rounded-full mt-4"></div>
         </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12" data-scroll-reveal>
+            <button
+                class="portfolio-filter active px-6 py-2 rounded-full glass text-white font-medium hover:bg-white/20 transition-all duration-300"
+                data-filter="all">
+                All Projects
+            </button>
+            <button
+                class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
+                data-filter="web">
+                Web Apps
+            </button>
+            <button
+                class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
+                data-filter="mobile">
+                Mobile
+            </button>
+            <button
+                class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
+                data-filter="design">
+                Design
+            </button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+            @php
+            $projects = [
+            [
+            'title' => 'E-Commerce Platform',
+            'category' => 'web',
+            'image' => 'portfolio/assets/img/portfolio/app-1.jpg',
+            'tags' => ['Laravel', 'Vue.js', 'Stripe'],
+            'color' => 'from-cyan-500 to-blue-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            [
+            'title' => 'Mobile Banking App',
+            'category' => 'mobile',
+            'image' => 'portfolio/assets/img/portfolio/app-2.jpg',
+            'tags' => ['React Native', 'Node.js'],
+            'color' => 'from-purple-500 to-pink-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            [
+            'title' => 'Brand Identity Design',
+            'category' => 'design',
+            'image' => 'portfolio/assets/img/portfolio/branding-1.jpg',
+            'tags' => ['Figma', 'Illustrator'],
+            'color' => 'from-orange-500 to-red-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            [
+            'title' => 'SaaS Dashboard',
+            'category' => 'web',
+            'image' => 'portfolio/assets/img/portfolio/web-1.jpg',
+            'tags' => ['React', 'TypeScript', 'Tailwind'],
+            'color' => 'from-emerald-500 to-teal-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            [
+            'title' => 'Fitness Tracker App',
+            'category' => 'mobile',
+            'image' => 'portfolio/assets/img/portfolio/app-3.jpg',
+            'tags' => ['Flutter', 'Firebase'],
+            'color' => 'from-pink-500 to-rose-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            [
+            'title' => 'UI Kit Design',
+            'category' => 'design',
+            'image' => 'portfolio/assets/img/portfolio/branding-2.jpg',
+            'tags' => ['Figma', 'Design System'],
+            'color' => 'from-violet-500 to-purple-500',
+            'link' => '#',
+            'github' => '#'
+            ],
+            ];
+            @endphp
+
+            @foreach($projects as $index => $project)
+            <div class="portfolio-item" data-category="{{ $project['category'] }}" data-scroll-reveal
+                style="--delay: {{ $index * 0.1 }}s">
+                <div class="group relative overflow-hidden rounded-2xl glass" data-tilt>
+                    <!-- Image -->
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- Overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="absolute inset-0 flex flex-col justify-end p-6">
+                            <!-- Tags -->
+                            <div
+                                class="flex flex-wrap gap-2 mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                @foreach($project['tags'] as $tag)
+                                <span
+                                    class="px-2 py-1 text-xs font-medium bg-white/20 text-white rounded-full backdrop-blur-sm">
+                                    {{ $tag }}
+                                </span>
+                                @endforeach
+                            </div>
+
+                            <!-- Title -->
+                            <h3
+                                class="text-xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                                {{ $project['title'] }}
+                            </h3>
+
+                            <!-- Actions -->
+                            <div
+                                class="flex gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                                <a href="{{ $project['link'] }}"
+                                    class="w-10 h-10 rounded-full bg-gradient-to-r {{ $project['color'] }} flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                    data-glightbox title="View Project">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a href="{{ $project['github'] }}"
+                                    class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 hover:scale-110 transition-all"
+                                    target="_blank">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="{{ $project['link'] }}"
+                                    class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 hover:scale-110 transition-all"
+                                    target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Badge -->
+                    <div class="absolute top-4 left-4">
+                        <span
+                            class="px-3 py-1 rounded-full bg-gradient-to-r {{ $project['color'] }} text-white text-xs font-semibold uppercase tracking-wider">
+                            {{ $project['category'] }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-12" data-scroll-reveal>
+            <a href="#" class="btn-outline-modern magnetic-btn inline-flex items-center gap-3">
+                <span>View All Projects</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
 </section>
-<!-- /Portfolio Section -->
+
+<style>
+    .portfolio-filter.active {
+        background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(244, 63, 94, 0.3));
+        color: white;
+    }
+
+    .portfolio-item {
+        animation-delay: var(--delay);
+    }
+
+    .portfolio-item.hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filters = document.querySelectorAll('.portfolio-filter');
+        const items = document.querySelectorAll('.portfolio-item');
+
+        filters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                // Update active state
+                filters.forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
+
+                const category = this.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.classList.remove('hidden');
+                        item.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</script>

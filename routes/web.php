@@ -60,4 +60,10 @@ Route::get('mail', function () {
     return view('mail.template');
 })->name('mail');
 
+
+Route::get('storage-link', function () {
+    Artisan::call('storage:link');
+    return 'Storage link created.';
+})->name('storage-link');
+
 require __DIR__.'/auth.php';
