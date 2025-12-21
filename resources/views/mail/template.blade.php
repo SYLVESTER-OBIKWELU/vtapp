@@ -214,7 +214,7 @@
             <!-- Header -->
             <div class="header">
                 <div class="logo-container">
-                    <img src="https://vtapp.com.ng/home/img/logo_vtapp.png" alt="{{env('APP_NAME')}}" class="logo">
+                    <img src="{{ asset('home/img/logo_vtapp.png') }}" alt="{{env('APP_NAME')}}" class="logo">
                 </div>
                 <div class="brand-name">{{env('APP_NAME')}}</div>
             </div>
@@ -250,7 +250,7 @@
 
                 <div class="footer-contact">
                     <p class="footer-contact-item">
-                        <a href="mailto:info@vtapp.com.ng" class="footer-contact-link">info@vtapp.com.ng</a>
+                        <a href="mailto:hello@vtapp.com.ng" class="footer-contact-link">hello@vtapp.com.ng</a>
                     </p>
                     <p class="footer-contact-item">
                         <a href="https://vtapp.com.ng" class="footer-contact-link">www.vtapp.com.ng</a>
