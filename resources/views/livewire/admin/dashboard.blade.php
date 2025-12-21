@@ -18,7 +18,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" wire:poll.5s>
         <!-- Today's Visits -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 p-6 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-800 p-6 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -42,7 +42,7 @@
 
         <!-- This Week -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 p-6 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-700 p-6 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -64,7 +64,7 @@
 
         <!-- Portfolio Views -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-6 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 to-violet-700 p-6 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -86,7 +86,7 @@
 
         <!-- This Month -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-6 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-900 p-6 shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -111,7 +111,7 @@
 
         <!-- Last Month -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-600 to-slate-800 p-6 shadow-lg shadow-slate-500/25 hover:shadow-slate-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-700 to-blue-900 p-6 shadow-lg shadow-indigo-600/25 hover:shadow-indigo-600/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -135,7 +135,7 @@
 
         <!-- All Time -->
         <div
-            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 p-6 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-purple-800 p-6 shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 transition-all duration-300 hover:-translate-y-1">
             <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 rounded-full bg-white/10 blur-2xl"></div>
             <div class="relative">
                 <div class="flex items-center justify-between mb-4">
@@ -233,7 +233,7 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <a href="{{ route('visitors') }}"
-                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-600 transition-all duration-300">
+                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                 <div
                     class="w-12 h-12 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 group-hover:bg-white/20 flex items-center justify-center transition-colors">
                     <svg class="w-6 h-6 text-cyan-600 dark:text-cyan-400 group-hover:text-white" fill="none"
@@ -249,7 +249,7 @@
                     class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-white">Visitors</span>
             </a>
             <a href="{{ route('messages') }}"
-                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-600 transition-all duration-300">
+                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-indigo-600 hover:to-purple-700 transition-all duration-300">
                 <div
                     class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 group-hover:bg-white/20 flex items-center justify-center transition-colors">
                     <svg class="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover:text-white" fill="none"

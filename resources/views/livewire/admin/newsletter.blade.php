@@ -8,7 +8,7 @@
         <div class="flex items-center gap-3">
             <!-- Toggle Buttons -->
             <button wire:click='openList'
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-xl {{ $list ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/30' : 'bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300' }} font-medium transition-all duration-300 hover:shadow-lg">
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-xl {{ $list ? 'bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg shadow-blue-500/30' : 'bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300' }} font-medium transition-all duration-300 hover:shadow-lg">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
@@ -17,7 +17,7 @@
                 Subscribers
             </button>
             <button wire:click='openMailer'
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-xl {{ $mailer ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/30' : 'bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300' }} font-medium transition-all duration-300 hover:shadow-lg">
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-xl {{ $mailer ? 'bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-lg shadow-indigo-500/30' : 'bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300' }} font-medium transition-all duration-300 hover:shadow-lg">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
@@ -43,7 +43,7 @@
                     </svg>
                 </div>
                 <input wire:model.live.debounce.300ms='search' type="text"
-                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Search subscribers...">
             </div>
 
@@ -51,7 +51,7 @@
             <div class="flex items-center gap-3">
                 <label class="text-sm font-medium text-gray-600 dark:text-gray-300">Show</label>
                 <select wire:model.live='perPage'
-                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all">
+                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="50">50</option>
@@ -162,7 +162,7 @@
         <div class="p-6 border-b border-gray-200 dark:border-zinc-700">
             <div class="flex items-center gap-4">
                 <div
-                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -182,7 +182,7 @@
                 <label for="subject"
                     class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
                 <input wire:model.defer="subject" type="text" id="subject"
-                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                     placeholder="Enter newsletter subject">
                 @error('subject') <span class="text-red-500 text-sm mt-1">{{ $message }}</span> @enderror
             </div>
@@ -209,7 +209,7 @@
                 <label for="message"
                     class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
                 <textarea wire:model.defer="body" id="message" rows="8"
-                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"
                     placeholder="Write your newsletter message here..."></textarea>
                 @error('body') <span class="text-red-500 text-sm mt-1">{{ $message }}</span> @enderror
             </div>
@@ -217,7 +217,7 @@
             <!-- Submit -->
             <div class="flex items-center gap-4">
                 <button type="submit"
-                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all duration-300 hover:-translate-y-0.5">
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5">
                     <span wire:loading.remove wire:target='sendNewsletter'>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

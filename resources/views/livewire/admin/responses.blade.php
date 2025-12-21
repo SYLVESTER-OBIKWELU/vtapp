@@ -27,7 +27,7 @@
                     </svg>
                 </div>
                 <input wire:model.live.debounce.300ms='search' type="text"
-                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                     placeholder="Search responses...">
             </div>
 
@@ -36,7 +36,7 @@
             <div class="flex items-center gap-3">
                 <label class="text-sm font-medium text-gray-600 dark:text-gray-300">Show</label>
                 <select wire:model.live='perPage'
-                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all">
+                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="50">50</option>
@@ -85,7 +85,7 @@
                         class="hover:bg-gray-50 dark:hover:bg-zinc-700/30 transition-colors">
                         <td class="px-6 py-4">
                             <span
-                                class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 text-white text-sm font-semibold">
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-700 text-white text-sm font-semibold">
                                 {{$count++}}
                             </span>
                         </td>
@@ -95,7 +95,7 @@
                         </td>
                         <td class="px-6 py-4">
                             <a href="mailto:{{$response->email}}"
-                                class="text-sm text-cyan-600 dark:text-cyan-400 hover:underline">{{$response->email}}</a>
+                                class="text-sm text-blue-600 dark:text-blue-400 hover:underline">{{$response->email}}</a>
                         </td>
                         <td class="px-6 py-4">
                             <span

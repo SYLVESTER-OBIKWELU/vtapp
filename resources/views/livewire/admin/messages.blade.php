@@ -28,7 +28,7 @@
                     </svg>
                 </div>
                 <input wire:model.live.debounce.300ms='search' type="text"
-                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                    class="w-full pl-11 pr-4 py-3 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Search messages...">
             </div>
 
@@ -37,7 +37,7 @@
             <div class="flex items-center gap-3">
                 <label class="text-sm font-medium text-gray-600 dark:text-gray-300">Show</label>
                 <select wire:model.live='perPage'
-                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all">
+                    class="px-4 py-2 rounded-xl bg-gray-50 dark:bg-zinc-700 border border-gray-200 dark:border-zinc-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="50">50</option>
@@ -98,7 +98,7 @@
                         </td>
                         <td class="px-6 py-4">
                             <a href="mailto:{{$message->email}}"
-                                class="text-sm text-cyan-600 dark:text-cyan-400 hover:underline">{{$message->email}}</a>
+                                class="text-sm text-blue-600 dark:text-blue-400 hover:underline">{{$message->email}}</a>
                         </td>
                         <td class="px-6 py-4">
                             <span class="text-sm text-gray-600 dark:text-gray-300">{{Str::limit($message->subject,
