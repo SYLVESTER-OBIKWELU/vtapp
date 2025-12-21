@@ -503,7 +503,7 @@ select:focus[data-flux-control] {
    SCROLL TOP BUTTON
    ========================================== */
 .scroll-top-btn {
-    @apply fixed bottom-8 right-8 w-12 h-12 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50;
+    @apply fixed bottom-8 left-8 w-12 h-12 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50;
     background: linear-gradient(135deg, #06b6d4, #3b82f6);
 }
 

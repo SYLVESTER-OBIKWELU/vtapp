@@ -63,14 +63,19 @@
       <!-- Mobile Menu Toggle -->
       <button
         class="mobile-nav-toggle lg:hidden w-10 h-10 flex items-center justify-center text-white hover:text-cyan-400 transition-colors duration-300">
-        <i class="bi bi-list text-2xl"></i>
+        <i id="nav-toggle-icon" class="bi bi-list text-2xl"></i>
       </button>
     </div>
   </div>
 
   <!-- Mobile Navigation -->
   <div class="nav-menu lg:hidden">
-    <ul class="flex flex-col gap-2">
+    <!-- Close button -->
+    <button
+      class="close-nav-btn absolute top-6 right-6 w-10 h-10 flex items-center justify-center text-white hover:text-cyan-400 transition-colors duration-300">
+      <i class="bi bi-x text-2xl"></i>
+    </button>
+    <ul class="flex flex-col gap-2 pt-6">
       <li>
         <a href="#hero"
           class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
