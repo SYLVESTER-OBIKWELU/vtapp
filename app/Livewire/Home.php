@@ -4,10 +4,9 @@ namespace App\Livewire;
 
 use App\Mail\Message;
 use App\Models\NewsLetter;
+use App\Services\VisitorService;
 use Illuminate\Support\Facades\Request;
 use Livewire\Component;
-use Jenssegers\Agent\Agent;
-use Stevebauman\Location\Facades\Location;
 use App\Models\Visitor;
 use Illuminate\Support\Facades\Mail;
 
@@ -24,29 +23,8 @@ class Home extends Component
 
 
     public function mount(){
-        $agent = new Agent();
-        $ip = Request::ip();
-        $device = $agent->device().'-'.$agent->platform().'-'.$agent->browser();
-        $position = Location::get($ip);
-        if ($position && isset($position->city, $position->regionName, $position->countryName)) {
-            $location = "{$position->city}, {$position->regionName}, {$position->countryName}";
-        } else {
-            $location = 'Unknown';
-        }
-
-        $visitor = Visitor::where('ip_address', $ip)
-            ->whereDate('created_at', now()->toDateString())
-            ->first();
-
-        if ($visitor) {
-            $visitor->touch();
-        } else {
-            Visitor::create([
-                'ip_address' => $ip,
-                'device' => $device,
-                'location' => $location,
-            ]);
-        }
+        // Use the VisitorService for accurate tracking
+        VisitorService::track(request());
     }
 
     public function subcribe(){
