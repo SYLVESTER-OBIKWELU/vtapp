@@ -711,6 +711,7 @@ class ComposerStaticInit9f37514794e3ce24451138da82abe475
         'App\\Models\\Visitor' => __DIR__ . '/../..' . '/app/Models/Visitor.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Rules\\ReCaptcha' => __DIR__ . '/../..' . '/app/Rules/ReCaptcha.php',
+        'App\\Services\\VisitorService' => __DIR__ . '/../..' . '/app/Services/VisitorService.php',
         'App\\View\\Components\\AppLayout' => __DIR__ . '/../..' . '/app/View/Components/AppLayout.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',

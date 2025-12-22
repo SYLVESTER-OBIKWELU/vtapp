@@ -42,6 +42,7 @@ return array(
     'App\\Models\\Visitor' => $baseDir . '/app/Models/Visitor.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Rules\\ReCaptcha' => $baseDir . '/app/Rules/ReCaptcha.php',
+    'App\\Services\\VisitorService' => $baseDir . '/app/Services/VisitorService.php',
     'App\\View\\Components\\AppLayout' => $baseDir . '/app/View/Components/AppLayout.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
