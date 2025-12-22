@@ -45,6 +45,8 @@
 
 <body class="font-['Inter'] bg-slate-900 text-white antialiased">
 
+    @include('layouts.preloader')
+
     {{ $slot }}
 
     <!-- Scroll Top -->
