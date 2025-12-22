@@ -27,7 +27,7 @@
   <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"
     style="animation-delay: 2s;"></div>
 
-  <div class="container mx-auto mt-40 px-4 lg:px-8 relative z-10">
+  <div class="container mx-auto mt-30 px-4 lg:px-8 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Hero Content -->
       <div class="text-center lg:text-left order-2 lg:order-1" data-scroll-reveal="left">
