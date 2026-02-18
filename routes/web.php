@@ -1,9 +1,17 @@
 <?php
 
 use App\Livewire\Auth\Unsubscribe;
+use App\Livewire\Admin\Projects\ProjectIndex;
+use App\Livewire\Admin\Projects\ProjectCreate;
+use App\Livewire\Admin\Projects\ProjectEdit;
+use App\Livewire\Admin\Reviews\ReviewIndex;
+use App\Livewire\Admin\Reviews\ReviewCreate;
+use App\Livewire\Admin\Reviews\ReviewEdit;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
+use App\Models\Project;
+use App\Models\Review;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +46,23 @@ Route::get('vtadmin/responses', function () {
 Route::get('vtadmin/portfolio', function () {
     return view('admin.portfolio');
 })->middleware(['auth','verified'])->name('view_portfolio');
+
+// Projects Management Routes
+Route::middleware(['auth', 'verified'])->prefix('vtadmin')->group(function () {
+    // Projects
+    Route::get('projects', ProjectIndex::class)->name('admin.projects.index');
+    Route::get('projects/create', ProjectCreate::class)->name('admin.projects.create');
+    Route::get('projects/{project}/edit', function (Project $project) {
+        return view('admin.projects.edit', compact('project'));
+    })->name('admin.projects.edit');
+    
+    // Reviews
+    Route::get('reviews', ReviewIndex::class)->name('admin.reviews.index');
+    Route::get('reviews/create', ReviewCreate::class)->name('admin.reviews.create');
+    Route::get('reviews/{review}/edit', function (Review $review) {
+        return view('admin.reviews.edit', compact('review'));
+    })->name('admin.reviews.edit');
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');

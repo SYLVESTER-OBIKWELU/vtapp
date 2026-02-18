@@ -1,0 +1,1 @@
+<livewire:admin.projects.project-edit :project="$project" />
