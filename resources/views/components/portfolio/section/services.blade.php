@@ -43,50 +43,51 @@
             $services = [
             [
             'icon' => 'bi-code-square',
-            'title' => 'Web Development',
-            'description' => 'Building responsive, high-performance websites and web applications using modern
-            frameworks and best practices.',
-            'features' => ['Custom Web Apps', 'E-commerce Solutions', 'CMS Development'],
+            'title' => 'Custom Web Development',
+            'description' => 'Building fast, responsive, SEO-optimized websites and web applications using Laravel,
+            React, Vue.js, and Tailwind CSS.',
+            'features' => ['Custom Web Apps', 'E-commerce Solutions', 'SaaS Platforms'],
             'color' => 'from-cyan-500 to-blue-500'
             ],
             [
             'icon' => 'bi-phone',
-            'title' => 'Mobile Development',
-            'description' => 'Creating native and cross-platform mobile applications that deliver seamless user
-            experiences.',
-            'features' => ['iOS & Android Apps', 'React Native', 'Flutter Development'],
+            'title' => 'Mobile App Development',
+            'description' => 'Creating cross-platform mobile apps with Flutter and React Native for iOS and Android with
+            seamless UX.',
+            'features' => ['iOS & Android Apps', 'Flutter & React Native', 'App Store Deployment'],
             'color' => 'from-purple-500 to-pink-500'
             ],
             [
-            'icon' => 'bi-palette',
-            'title' => 'UI/UX Design',
-            'description' => 'Designing intuitive interfaces and engaging experiences that users love to interact
-            with.',
-            'features' => ['User Research', 'Wireframing', 'Prototyping'],
-            'color' => 'from-pink-500 to-rose-500'
-            ],
-            [
-            'icon' => 'bi-gear',
-            'title' => 'API Development',
-            'description' => 'Building robust and scalable APIs that power your applications and integrations.',
-            'features' => ['RESTful APIs', 'GraphQL', 'Third-party Integration'],
+            'icon' => 'bi-search',
+            'title' => 'SEO & Digital Marketing',
+            'description' => 'Boosting your search rankings with on-page SEO, technical audits, keyword research,
+            content strategy, and link building.',
+            'features' => ['Technical SEO Audit', 'Keyword Research', 'Monthly Reports'],
             'color' => 'from-emerald-500 to-teal-500'
             ],
             [
-            'icon' => 'bi-cloud',
-            'title' => 'Cloud Solutions',
-            'description' => 'Deploying and managing applications on cloud platforms with optimal performance and
-            security.',
-            'features' => ['AWS & GCP', 'DevOps', 'CI/CD Pipelines'],
+            'icon' => 'bi-wordpress',
+            'title' => 'CMS & WordPress Solutions',
+            'description' => 'Custom WordPress themes, plugins, and headless CMS integrations. Full site setup,
+            migration, and optimization.',
+            'features' => ['Custom Themes', 'Plugin Development', 'CMS Migration'],
+            'color' => 'from-blue-600 to-indigo-500'
+            ],
+            [
+            'icon' => 'bi-wrench-adjustable',
+            'title' => 'Maintenance & Support',
+            'description' => 'Ongoing website and app maintenance including security updates, performance monitoring,
+            backups, and 24/7 uptime watching.',
+            'features' => ['Security Updates', '24/7 Monitoring', 'Performance Optimization'],
             'color' => 'from-amber-500 to-orange-500'
             ],
             [
-            'icon' => 'bi-shield-check',
-            'title' => 'Consulting',
-            'description' => 'Providing expert guidance on technology decisions, architecture, and development
-            strategies.',
-            'features' => ['Tech Strategy', 'Code Review', 'Team Training'],
-            'color' => 'from-violet-500 to-purple-500'
+            'icon' => 'bi-palette',
+            'title' => 'UI/UX Design & Branding',
+            'description' => 'User-centric interface design, wireframing, prototyping, and brand identity that converts
+            visitors into customers.',
+            'features' => ['Figma Prototypes', 'User Research', 'Brand Identity'],
+            'color' => 'from-pink-500 to-rose-500'
             ],
             ];
             @endphp

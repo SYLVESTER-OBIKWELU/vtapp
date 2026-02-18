@@ -27,55 +27,60 @@
   <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"
     style="animation-delay: 2s;"></div>
 
-  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+  <div class="container mx-auto mt-30 px-4 lg:px-8 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Hero Content -->
       <div class="text-center lg:text-left order-2 lg:order-1" data-scroll-reveal="left">
         <div
           class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 mb-6">
           <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-          <span class="text-sm text-gray-300">Available for new projects</span>
+          <span class="text-sm text-gray-300">Your Digital Growth Partner</span>
         </div>
 
         <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-          <span class="text-white">Build Your</span><br>
-          <span class="text-white">Applications With</span><br>
+          <span class="text-white">We Build</span><br>
+          <span class="text-white">Digital Experiences</span><br>
           <span
             class="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent gradient-animate neon-text"
             data-scramble>
-            VTAPP
+            That Convert
           </span>
         </h1>
 
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-          We are a team of talented developers crafting <span class="text-cyan-400">innovative digital solutions</span>
-          that transform your ideas into reality.
+          VTAPP is a full-service <span class="text-cyan-400">web agency</span> specializing in website development,
+          mobile apps, SEO, CMS management, and ongoing maintenance. We help businesses launch, grow, and dominate
+          online.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a href="#about" class="btn-modern group" data-magnetic data-ripple>
+          <a href="#contact" class="btn-modern group" data-magnetic data-ripple>
             <span class="relative z-10 flex items-center justify-center gap-2">
-              Get Started
+              Start Your Project
               <i class="bi bi-arrow-right transform group-hover:translate-x-1 transition-transform duration-300"></i>
             </span>
           </a>
           <a href="#features" class="btn-outline-modern group" data-magnetic>
             <span class="flex items-center justify-center gap-2">
-              <i class="bi bi-play-circle"></i>
-              Learn More
+              <i class="bi bi-grid-3x3-gap"></i>
+              Our Services
             </span>
           </a>
         </div>
 
         <!-- Stats -->
-        <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">
+        <div class="grid grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/10">
           <div class="text-center lg:text-left" data-scroll-reveal>
             <div class="text-3xl md:text-4xl font-bold text-white" data-counter="50" data-counter-suffix="+">0+</div>
-            <div class="text-sm text-gray-400 mt-1">Projects Completed</div>
+            <div class="text-sm text-gray-400 mt-1">Projects Delivered</div>
           </div>
           <div class="text-center lg:text-left" data-scroll-reveal>
             <div class="text-3xl md:text-4xl font-bold text-white" data-counter="30" data-counter-suffix="+">0+</div>
             <div class="text-sm text-gray-400 mt-1">Happy Clients</div>
+          </div>
+          <div class="text-center lg:text-left" data-scroll-reveal>
+            <div class="text-3xl md:text-4xl font-bold text-white" data-counter="99" data-counter-suffix="%">0%</div>
+            <div class="text-sm text-gray-400 mt-1">Uptime SLA</div>
           </div>
           <div class="text-center lg:text-left" data-scroll-reveal>
             <div class="text-3xl md:text-4xl font-bold text-white" data-counter="4" data-counter-suffix="+">0+</div>
@@ -106,13 +111,28 @@
           <div
             class="absolute -bottom-6 -right-6 w-20 h-20 glass rounded-2xl flex items-center justify-center float-slow"
             style="animation-delay: 1s;">
-            <i class="bi bi-gear text-3xl text-blue-400"></i>
+            <i class="bi bi-search text-3xl text-blue-400"></i>
           </div>
           <div class="absolute top-1/2 -right-10 w-16 h-16 glass rounded-xl flex items-center justify-center float-slow"
             style="animation-delay: 1.5s;">
             <i class="bi bi-lightning-charge text-2xl text-purple-400"></i>
           </div>
+          <div class="absolute top-1/4 -left-10 w-16 h-16 glass rounded-xl flex items-center justify-center float-slow"
+            style="animation-delay: 2s;">
+            <i class="bi bi-phone text-2xl text-emerald-400"></i>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Trusted By Logos Strip -->
+    <div class="mt-16 pt-8 border-t border-white/5 text-center" data-scroll-reveal>
+      <p class="text-gray-500 text-sm uppercase tracking-wider mb-6">Trusted by businesses across industries</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-40">
+        <span class="text-xl font-bold text-gray-400">TWEX</span>
+        <span class="text-xl font-bold text-gray-400">GOLF LTD</span>
+        <span class="text-xl font-bold text-gray-400">OSCARMOH</span>
+        <span class="text-xl font-bold text-gray-400">EZE & CO</span>
       </div>
     </div>
   </div>

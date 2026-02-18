@@ -215,8 +215,7 @@
             <!-- Footer -->
             <div class="footer">
                 <p class="footer-text">
-                    &copy; {{env('APP_YEAR')}} <a href="https://vtapp.com.ng" class="footer-link">Virtual App
-                        Technologies</a>. All rights reserved.
+                    &copy; {{env('APP_YEAR')}} <a href="https://vtapp.com.ng" class="footer-link">Virtual Tech Applications</a>. All rights reserved.
                 </p>
 
                 <div class="unsubscribe">

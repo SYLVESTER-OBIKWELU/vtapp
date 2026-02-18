@@ -15,19 +15,59 @@
         </div>
 
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-          One Stop <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Web
-            Solutions</span>
+          Your One-Stop <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Digital
+            Agency</span>
         </h2>
 
-        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-          We are a creative and results-driven website and app development agency committed to transforming ideas into
-          powerful digital experiences. Whether you're a startup, small business, or enterprise, we partner with you to
-          build scalable, user-friendly, and high-performing digital products that deliver real business value.
+        <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+          VTAPP (Virtual Tech Applications) is a creative and results-driven digital agency committed to transforming
+          ideas into powerful online experiences. We specialize in <span class="text-cyan-400 font-medium">custom
+            website development</span>, <span class="text-cyan-400 font-medium">mobile applications</span>, <span
+            class="text-cyan-400 font-medium">SEO optimization</span>, <span class="text-cyan-400 font-medium">CMS
+            solutions</span>, and <span class="text-cyan-400 font-medium">ongoing site maintenance</span>.
         </p>
+
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          Whether you're a startup launching your first product, a small business looking to grow online, or an
+          enterprise needing a scalable platform, we partner with you to build high-performing digital products that
+          deliver real business value and measurable ROI.
+        </p>
+
+        <!-- Key Highlights -->
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+              <i class="bi bi-check2-all text-cyan-400"></i>
+            </div>
+            <span class="text-gray-300 text-sm">Custom Web Development</span>
+          </div>
+          <div class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+              <i class="bi bi-check2-all text-cyan-400"></i>
+            </div>
+            <span class="text-gray-300 text-sm">Mobile App Development</span>
+          </div>
+          <div class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+              <i class="bi bi-check2-all text-cyan-400"></i>
+            </div>
+            <span class="text-gray-300 text-sm">SEO & Digital Marketing</span>
+          </div>
+          <div class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+              <i class="bi bi-check2-all text-cyan-400"></i>
+            </div>
+            <span class="text-gray-300 text-sm">24/7 Maintenance & Support</span>
+          </div>
+        </div>
 
         <a href="#contact"
           class="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-300 group">
-          <span>Read More</span>
+          <span>Get a Free Consultation</span>
           <i class="bi bi-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>
         </a>
       </div>
@@ -39,7 +79,8 @@
           <div class="icon-box-modern mb-6">
             <i class="bi bi-bullseye"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Mission
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Our
+            Mission
           </h3>
           <p class="text-gray-400 text-sm leading-relaxed">
             To empower businesses of all sizes with cutting-edge technology and intuitive design. We build long-term
@@ -52,33 +93,38 @@
           <div class="icon-box-modern mb-6">
             <i class="bi bi-eye"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Vision
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Our
+            Vision
           </h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            To be a trusted technology partner for ambitious brands looking to innovate, scale, and thrive in the
-            digital world.
+            To be the most trusted technology partner for ambitious brands looking to innovate, scale, and dominate in
+            the digital world across Africa and beyond.
           </p>
         </div>
 
-        <!-- Values -->
+        <!-- Process -->
         <div class="card-modern group" data-tilt style="animation-delay: 0.2s;">
           <div class="icon-box-modern mb-6">
-            <i class="bi bi-heart"></i>
+            <i class="bi bi-diagram-3"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Our
-            Values</h3>
+            Process</h3>
           <ul class="text-gray-400 text-sm space-y-2">
             <li class="flex items-start gap-2">
               <i class="bi bi-check-circle text-cyan-400 mt-0.5"></i>
-              <span>Clear communication, honest timelines</span>
+              <span>Discovery & Strategy</span>
             </li>
             <li class="flex items-start gap-2">
               <i class="bi bi-check-circle text-cyan-400 mt-0.5"></i>
-              <span>User-first product approach</span>
+              <span>Design & Prototype</span>
             </li>
             <li class="flex items-start gap-2">
               <i class="bi bi-check-circle text-cyan-400 mt-0.5"></i>
-              <span>Quality over speed</span>
+              <span>Develop & Launch</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="bi bi-check-circle text-cyan-400 mt-0.5"></i>
+              <span>Optimize & Maintain</span>
             </li>
           </ul>
         </div>
@@ -91,8 +137,8 @@
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Why
             Choose Us?</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            We are passionate developers, designers, and strategists dedicated to exceptional results with a
-            collaborative approach.
+            We combine technical expertise with creative strategy to deliver websites and apps that don't just look
+            great — they rank, convert, and scale with your business.
           </p>
         </div>
       </div>

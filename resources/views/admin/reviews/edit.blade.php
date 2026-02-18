@@ -1,0 +1,1 @@
+<livewire:admin.reviews.review-edit :review="$review" />

@@ -4,7 +4,9 @@ namespace App\Livewire\Admin;
 
 use App\Models\NewsLetter;
 use App\Models\Portfolio;
+use App\Models\Project;
 use App\Models\Response;
+use App\Models\Review;
 use Livewire\Component;
 use App\Models\Visitor;
 
@@ -21,7 +23,9 @@ class Dashboard extends Component
         $responses = Response::all();
         $subscribers = NewsLetter::all();
         $portfolio = Portfolio::all();
+        $projects = Project::all();
+        $reviews = Review::all();
         
-        return view('livewire.admin.dashboard',compact('visitors','responses','subscribers','portfolio'));
+        return view('livewire.admin.dashboard',compact('visitors','responses','subscribers','portfolio','projects','reviews'));
     }
 }

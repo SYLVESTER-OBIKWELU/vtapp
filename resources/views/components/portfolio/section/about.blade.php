@@ -65,15 +65,16 @@
             <div class="space-y-8" data-scroll-reveal>
                 <!-- Bio Text -->
                 <div class="space-y-4">
-                    <h3 class="text-2xl font-bold text-white">Full-Stack Developer & Designer</h3>
+                    <h3 class="text-2xl font-bold text-white">Full-Stack Developer & Digital Agency Founder</h3>
                     <p class="text-gray-300 leading-relaxed">
-                        I'm a passionate developer with expertise in creating stunning web applications and digital
-                        experiences. With a strong foundation in both front-end and back-end technologies, I bring ideas
-                        to life through clean code and innovative design.
+                        I'm Sylvester Obikwelu — a passionate full-stack developer and the founder of VTAPP, a digital
+                        agency specializing in custom web development, mobile applications, SEO optimization, and CMS
+                        solutions. I turn business ideas into high-performing digital products.
                     </p>
                     <p class="text-gray-400 leading-relaxed">
-                        My journey in tech started with a curiosity for how things work, which evolved into a deep love
-                        for problem-solving and creating impactful digital solutions that make a difference.
+                        With expertise across Laravel, React, Vue.js, Flutter, and WordPress, I deliver end-to-end
+                        solutions — from strategy and design to development, deployment, and ongoing maintenance. My
+                        mission is helping businesses grow through technology that works.
                     </p>
                 </div>
 
@@ -84,7 +85,7 @@
                             <i class="bi bi-person text-cyan-400 text-xl"></i>
                             <div>
                                 <span class="text-gray-400 text-sm">Name</span>
-                                <p class="text-white font-medium">John Doe</p>
+                                <p class="text-white font-medium">Sylvester Obikwelu</p>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@
                             <i class="bi bi-geo-alt text-cyan-400 text-xl"></i>
                             <div>
                                 <span class="text-gray-400 text-sm">Location</span>
-                                <p class="text-white font-medium">New York, USA</p>
+                                <p class="text-white font-medium">Awka, Nigeria</p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +103,7 @@
                             <i class="bi bi-envelope text-cyan-400 text-xl"></i>
                             <div>
                                 <span class="text-gray-400 text-sm">Email</span>
-                                <p class="text-white font-medium">hello@example.com</p>
+                                <p class="text-white font-medium">theopensly@gmail.com</p>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,84 @@
+@php
+use App\Models\Project;
+
+// Try to get projects from database, fallback to hardcoded if table doesn't exist yet
+try {
+$dbProjects = Project::portfolio()->active()->ordered()->get();
+$categories = Project::portfolio()->active()->distinct()->pluck('category')->toArray();
+} catch (\Exception $e) {
+$dbProjects = collect([]);
+$categories = [];
+}
+
+// Fallback projects if database is empty or not migrated
+$fallbackProjects = [
+[
+'title' => 'E-Commerce Platform',
+'category' => 'web',
+'image' => 'portfolio/assets/img/portfolio/app-1.jpg',
+'tags' => ['Laravel', 'Vue.js', 'Stripe'],
+'color' => 'from-cyan-500 to-blue-500',
+'link' => '#',
+'github' => '#'
+],
+[
+'title' => 'Mobile Banking App',
+'category' => 'mobile',
+'image' => 'portfolio/assets/img/portfolio/app-2.jpg',
+'tags' => ['React Native', 'Node.js'],
+'color' => 'from-purple-500 to-pink-500',
+'link' => '#',
+'github' => '#'
+],
+[
+'title' => 'Brand Identity Design',
+'category' => 'design',
+'image' => 'portfolio/assets/img/portfolio/branding-1.jpg',
+'tags' => ['Figma', 'Illustrator'],
+'color' => 'from-orange-500 to-red-500',
+'link' => '#',
+'github' => '#'
+],
+[
+'title' => 'SaaS Dashboard',
+'category' => 'web',
+'image' => 'portfolio/assets/img/portfolio/web-1.jpg',
+'tags' => ['React', 'TypeScript', 'Tailwind'],
+'color' => 'from-emerald-500 to-teal-500',
+'link' => '#',
+'github' => '#'
+],
+[
+'title' => 'Fitness Tracker App',
+'category' => 'mobile',
+'image' => 'portfolio/assets/img/portfolio/app-3.jpg',
+'tags' => ['Flutter', 'Firebase'],
+'color' => 'from-pink-500 to-rose-500',
+'link' => '#',
+'github' => '#'
+],
+[
+'title' => 'UI Kit Design',
+'category' => 'design',
+'image' => 'portfolio/assets/img/portfolio/branding-2.jpg',
+'tags' => ['Figma', 'Design System'],
+'color' => 'from-violet-500 to-purple-500',
+'link' => '#',
+'github' => '#'
+],
+];
+
+// Use database projects if available, otherwise use fallback
+$displayProjects = $dbProjects->count() > 0 ? $dbProjects : collect($fallbackProjects);
+
+// Get unique categories for filter buttons
+if (empty($categories)) {
+$categories = ['web', 'mobile', 'design'];
+} else {
+$categories = array_unique($categories);
+}
+@endphp
+
 <!-- Portfolio Section -->
 <section id="portfolio" class="relative py-24 xl:ml-72 overflow-hidden">
     <!-- Background -->
@@ -33,91 +114,38 @@
                 data-filter="all">
                 All Projects
             </button>
+            @foreach($categories as $cat)
             <button
                 class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
-                data-filter="web">
-                Web Apps
+                data-filter="{{ $cat }}">
+                {{ ucfirst($cat) }}
             </button>
-            <button
-                class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
-                data-filter="mobile">
-                Mobile
-            </button>
-            <button
-                class="portfolio-filter px-6 py-2 rounded-full glass text-gray-400 font-medium hover:bg-white/20 hover:text-white transition-all duration-300"
-                data-filter="design">
-                Design
-            </button>
+            @endforeach
         </div>
 
         <!-- Portfolio Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+            @foreach($displayProjects as $index => $project)
             @php
-            $projects = [
-            [
-            'title' => 'E-Commerce Platform',
-            'category' => 'web',
-            'image' => 'portfolio/assets/img/portfolio/app-1.jpg',
-            'tags' => ['Laravel', 'Vue.js', 'Stripe'],
-            'color' => 'from-cyan-500 to-blue-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            [
-            'title' => 'Mobile Banking App',
-            'category' => 'mobile',
-            'image' => 'portfolio/assets/img/portfolio/app-2.jpg',
-            'tags' => ['React Native', 'Node.js'],
-            'color' => 'from-purple-500 to-pink-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            [
-            'title' => 'Brand Identity Design',
-            'category' => 'design',
-            'image' => 'portfolio/assets/img/portfolio/branding-1.jpg',
-            'tags' => ['Figma', 'Illustrator'],
-            'color' => 'from-orange-500 to-red-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            [
-            'title' => 'SaaS Dashboard',
-            'category' => 'web',
-            'image' => 'portfolio/assets/img/portfolio/web-1.jpg',
-            'tags' => ['React', 'TypeScript', 'Tailwind'],
-            'color' => 'from-emerald-500 to-teal-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            [
-            'title' => 'Fitness Tracker App',
-            'category' => 'mobile',
-            'image' => 'portfolio/assets/img/portfolio/app-3.jpg',
-            'tags' => ['Flutter', 'Firebase'],
-            'color' => 'from-pink-500 to-rose-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            [
-            'title' => 'UI Kit Design',
-            'category' => 'design',
-            'image' => 'portfolio/assets/img/portfolio/branding-2.jpg',
-            'tags' => ['Figma', 'Design System'],
-            'color' => 'from-violet-500 to-purple-500',
-            'link' => '#',
-            'github' => '#'
-            ],
-            ];
+            // Handle both database model and array fallback
+            $isModel = $project instanceof \App\Models\Project;
+            $title = $isModel ? $project->title : $project['title'];
+            $category = $isModel ? $project->category : $project['category'];
+            $image = $isModel
+            ? ($project->featured_image ? asset('storage/' . $project->featured_image) :
+            asset('portfolio/assets/img/portfolio/default.jpg'))
+            : asset($project['image']);
+            $tags = $isModel ? ($project->technologies ?? []) : $project['tags'];
+            $color = $isModel ? $project->gradient_color : $project['color'];
+            $liveUrl = $isModel ? ($project->live_url ?? '#') : $project['link'];
+            $githubUrl = $isModel ? ($project->github_url ?? '#') : $project['github'];
             @endphp
-
-            @foreach($projects as $index => $project)
-            <div class="portfolio-item" data-category="{{ $project['category'] }}" data-scroll-reveal
+            <div class="portfolio-item" data-category="{{ $category }}" data-scroll-reveal
                 style="--delay: {{ $index * 0.1 }}s">
                 <div class="group relative overflow-hidden rounded-2xl glass" data-tilt>
                     <!-- Image -->
                     <div class="aspect-[4/3] overflow-hidden">
-                        <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
+                        <img src="{{ $image }}" alt="{{ $title }}"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     </div>
 
@@ -128,7 +156,7 @@
                             <!-- Tags -->
                             <div
                                 class="flex flex-wrap gap-2 mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                @foreach($project['tags'] as $tag)
+                                @foreach($tags as $tag)
                                 <span
                                     class="px-2 py-1 text-xs font-medium bg-white/20 text-white rounded-full backdrop-blur-sm">
                                     {{ $tag }}
@@ -139,27 +167,31 @@
                             <!-- Title -->
                             <h3
                                 class="text-xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
-                                {{ $project['title'] }}
+                                {{ $title }}
                             </h3>
 
                             <!-- Actions -->
                             <div
                                 class="flex gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                                <a href="{{ $project['link'] }}"
-                                    class="w-10 h-10 rounded-full bg-gradient-to-r {{ $project['color'] }} flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                <a href="{{ $liveUrl }}"
+                                    class="w-10 h-10 rounded-full bg-gradient-to-r {{ $color }} flex items-center justify-center text-white hover:scale-110 transition-transform"
                                     data-glightbox title="View Project">
                                     <i class="bi bi-eye"></i>
                                 </a>
-                                <a href="{{ $project['github'] }}"
+                                @if($githubUrl && $githubUrl !== '#')
+                                <a href="{{ $githubUrl }}"
                                     class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 hover:scale-110 transition-all"
                                     target="_blank">
                                     <i class="bi bi-github"></i>
                                 </a>
-                                <a href="{{ $project['link'] }}"
+                                @endif
+                                @if($liveUrl && $liveUrl !== '#')
+                                <a href="{{ $liveUrl }}"
                                     class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 hover:scale-110 transition-all"
                                     target="_blank">
                                     <i class="bi bi-box-arrow-up-right"></i>
                                 </a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -167,8 +199,8 @@
                     <!-- Category Badge -->
                     <div class="absolute top-4 left-4">
                         <span
-                            class="px-3 py-1 rounded-full bg-gradient-to-r {{ $project['color'] }} text-white text-xs font-semibold uppercase tracking-wider">
-                            {{ $project['category'] }}
+                            class="px-3 py-1 rounded-full bg-gradient-to-r {{ $color }} text-white text-xs font-semibold uppercase tracking-wider">
+                            {{ $category }}
                         </span>
                     </div>
                 </div>

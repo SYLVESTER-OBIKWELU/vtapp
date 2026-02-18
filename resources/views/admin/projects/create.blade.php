@@ -1,0 +1,1 @@
+<livewire:admin.projects.project-create />

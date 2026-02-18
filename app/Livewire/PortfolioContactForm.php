@@ -5,12 +5,10 @@ namespace App\Livewire;
 use App\Mail\Confirmed;
 use App\Mail\ThankYou;
 use App\Models\Contact;
-use App\Models\Visitor;
+use App\Services\VisitorService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Jenssegers\Agent\Agent;
 use Livewire\Component;
-use Stevebauman\Location\Facades\Location;
 
 class PortfolioContactForm extends Component
 {
@@ -21,29 +19,8 @@ class PortfolioContactForm extends Component
     public $body;
 
     public function mount(){
-        $agent = new Agent();
-        $ip = request()->ip();
-        $device = $agent->device().'-'.$agent->platform().'-'.$agent->browser();
-        $position = Location::get($ip);
-        if ($position && isset($position->city, $position->regionName, $position->countryName)) {
-            $location = "{$position->city}, {$position->regionName}, {$position->countryName}";
-        } else {
-            $location = 'Unknown';
-        }
-
-        $visitor = Visitor::where('ip_address', $ip)
-            ->whereDate('created_at', now()->toDateString())
-            ->first();
-
-        if ($visitor) {
-            $visitor->touch();
-        } else {
-            Visitor::create([
-                'ip_address' => $ip,
-                'device' => $device,
-                'location' => $location,
-            ]);
-        }
+        // Use the VisitorService for accurate tracking
+        VisitorService::track(request());
     }
 
     public function sendMessage(){

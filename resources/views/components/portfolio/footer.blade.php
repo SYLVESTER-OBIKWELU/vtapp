@@ -16,35 +16,35 @@
                 <a href="#" class="inline-block mb-6">
                     <span
                         class="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                        Portfolio
+                        Sylvester Obikwelu
                     </span>
                 </a>
                 <p class="text-gray-400 mb-6 max-w-md leading-relaxed">
-                    Full-Stack Developer passionate about creating innovative digital experiences. Let's build something
-                    amazing together.
+                    Full-Stack Developer & Founder of VTAPP Digital Agency. Specializing in custom web development,
+                    mobile apps, SEO, CMS solutions, and ongoing maintenance. Let's build something amazing together.
                 </p>
 
                 <!-- Social Links -->
                 <div class="flex gap-3">
-                    <a href="#"
+                    <a href="https://www.linkedin.com/in/sylvester-obikwelu-997aa9241/" target="_blank" rel="noopener"
                         class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-all duration-300">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://github.com/theopensly" target="_blank" rel="noopener"
                         class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600 transition-all duration-300">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://x.com/Donvestar" target="_blank" rel="noopener"
                         class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-500 transition-all duration-300">
                         <i class="bi bi-twitter-x"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://www.instagram.com/iam_donvest/" target="_blank" rel="noopener"
                         class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-pink-500 hover:to-rose-500 transition-all duration-300">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 transition-all duration-300">
-                        <i class="bi bi-dribbble"></i>
+                    <a href="https://web.facebook.com/DONVESTER1" target="_blank" rel="noopener"
+                        class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 transition-all duration-300">
+                        <i class="bi bi-facebook"></i>
                     </a>
                 </div>
             </div>
@@ -104,17 +104,17 @@
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <i class="bi bi-geo-alt text-cyan-400 mt-1"></i>
-                        <span class="text-gray-400">New York, NY, USA</span>
+                        <span class="text-gray-400">Awka, Anambra State, Nigeria</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="bi bi-envelope text-cyan-400 mt-1"></i>
-                        <a href="mailto:hello@example.com"
-                            class="text-gray-400 hover:text-cyan-400 transition-colors">hello@example.com</a>
+                        <a href="mailto:theopensly@gmail.com"
+                            class="text-gray-400 hover:text-cyan-400 transition-colors">theopensly@gmail.com</a>
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="bi bi-telephone text-cyan-400 mt-1"></i>
-                        <a href="tel:+1234567890" class="text-gray-400 hover:text-cyan-400 transition-colors">+1 (234)
-                            567-890</a>
+                        <a href="tel:+2347018508896" class="text-gray-400 hover:text-cyan-400 transition-colors">+234
+                            701 850 8896</a>
                     </li>
                 </ul>
 
@@ -132,7 +132,8 @@
         <div class="container mx-auto px-6 lg:px-12 py-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-gray-500 text-sm text-center md:text-left">
-                    &copy; {{ date('Y') }} <span class="text-cyan-400">Portfolio</span>. All rights reserved.
+                    &copy; {{ date('Y') }} <span class="text-cyan-400">Sylvester Obikwelu</span>. All rights reserved.
+                    Built with <span class="text-cyan-400">VTAPP</span>.
                 </p>
                 <div class="flex items-center gap-6 text-sm">
                     <a href="#" class="text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>

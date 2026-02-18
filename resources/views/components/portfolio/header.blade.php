@@ -22,7 +22,7 @@
 
         <!-- Name -->
         <h1 class="text-xl font-bold text-white mb-1">Sylvester</h1>
-        <p class="text-sm text-gray-400">Software Developer</p>
+        <p class="text-sm text-gray-400">Full-Stack Developer & Agency Founder</p>
 
         <!-- Social Links -->
         <div class="flex justify-center gap-2 mt-4">

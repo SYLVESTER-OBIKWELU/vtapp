@@ -27,7 +27,7 @@
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 mb-8">
                 <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span class="text-sm text-gray-300">Available for freelance</span>
+                <span class="text-sm text-gray-300">Available for projects & collaboration</span>
             </div>
 
             <!-- Name -->
@@ -44,7 +44,7 @@
             <div class="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-10">
                 <span>I'm a </span>
                 <span class="typed text-cyan-400 font-semibold"
-                    data-typed-items="Project Manager,Software Developer,Freelancer,Designer"></span>
+                    data-typed-items="Full-Stack Developer,Agency Founder,Laravel Expert,Mobile App Developer,SEO Specialist,UI/UX Designer"></span>
                 <span class="typed-cursor text-cyan-400">|</span>
             </div>
 

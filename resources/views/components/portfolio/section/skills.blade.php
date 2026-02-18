@@ -44,11 +44,12 @@
                 <!-- Skill Bars -->
                 @php
                 $devSkills = [
-                ['name' => 'HTML/CSS', 'level' => 95, 'color' => 'from-orange-500 to-red-500'],
-                ['name' => 'JavaScript', 'level' => 90, 'color' => 'from-yellow-500 to-orange-500'],
-                ['name' => 'PHP/Laravel', 'level' => 85, 'color' => 'from-red-500 to-pink-500'],
-                ['name' => 'React/Vue', 'level' => 80, 'color' => 'from-cyan-500 to-blue-500'],
-                ['name' => 'Node.js', 'level' => 75, 'color' => 'from-green-500 to-emerald-500'],
+                ['name' => 'PHP / Laravel', 'level' => 95, 'color' => 'from-red-500 to-pink-500'],
+                ['name' => 'JavaScript / Vue.js / React', 'level' => 90, 'color' => 'from-cyan-500 to-blue-500'],
+                ['name' => 'HTML5 / CSS3 / Tailwind CSS', 'level' => 95, 'color' => 'from-orange-500 to-red-500'],
+                ['name' => 'Flutter / Dart', 'level' => 80, 'color' => 'from-blue-400 to-cyan-400'],
+                ['name' => 'WordPress / CMS', 'level' => 85, 'color' => 'from-blue-600 to-indigo-500'],
+                ['name' => 'MySQL / PostgreSQL', 'level' => 88, 'color' => 'from-yellow-500 to-orange-500'],
                 ];
                 @endphp
 
@@ -76,16 +77,16 @@
                         class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
                         <i class="bi bi-palette text-white"></i>
                     </div>
-                    Design Skills
+                    Design & Other Skills
                 </h3>
 
                 @php
                 $designSkills = [
-                ['name' => 'UI/UX Design', 'level' => 90, 'color' => 'from-purple-500 to-pink-500'],
-                ['name' => 'Figma', 'level' => 85, 'color' => 'from-pink-500 to-rose-500'],
-                ['name' => 'Adobe XD', 'level' => 80, 'color' => 'from-fuchsia-500 to-purple-500'],
-                ['name' => 'Photoshop', 'level' => 75, 'color' => 'from-blue-500 to-indigo-500'],
-                ['name' => 'Illustrator', 'level' => 70, 'color' => 'from-orange-500 to-amber-500'],
+                ['name' => 'UI/UX Design', 'level' => 88, 'color' => 'from-purple-500 to-pink-500'],
+                ['name' => 'Figma', 'level' => 90, 'color' => 'from-pink-500 to-rose-500'],
+                ['name' => 'SEO Optimization', 'level' => 85, 'color' => 'from-emerald-500 to-teal-500'],
+                ['name' => 'Performance Optimization', 'level' => 82, 'color' => 'from-amber-500 to-orange-500'],
+                ['name' => 'DevOps & Deployment', 'level' => 78, 'color' => 'from-blue-500 to-indigo-500'],
                 ];
                 @endphp
 
@@ -117,10 +118,12 @@
                 ['icon' => 'bi-filetype-css', 'name' => 'CSS3', 'color' => 'from-blue-500 to-cyan-500'],
                 ['icon' => 'bi-filetype-js', 'name' => 'JavaScript', 'color' => 'from-yellow-400 to-orange-400'],
                 ['icon' => 'bi-filetype-php', 'name' => 'PHP', 'color' => 'from-indigo-500 to-purple-500'],
-                ['icon' => 'bi-bootstrap', 'name' => 'Bootstrap', 'color' => 'from-purple-500 to-violet-500'],
+                ['icon' => 'bi-bootstrap', 'name' => 'Tailwind', 'color' => 'from-cyan-400 to-blue-500'],
+                ['icon' => 'bi-phone', 'name' => 'Flutter', 'color' => 'from-blue-400 to-cyan-400'],
+                ['icon' => 'bi-wordpress', 'name' => 'WordPress', 'color' => 'from-blue-600 to-indigo-500'],
                 ['icon' => 'bi-git', 'name' => 'Git', 'color' => 'from-orange-500 to-red-600'],
                 ['icon' => 'bi-database', 'name' => 'MySQL', 'color' => 'from-blue-600 to-cyan-500'],
-                ['icon' => 'bi-cloud', 'name' => 'AWS', 'color' => 'from-orange-400 to-amber-500'],
+                ['icon' => 'bi-cloud', 'name' => 'DigitalOcean', 'color' => 'from-blue-500 to-cyan-400'],
                 ];
                 @endphp
 

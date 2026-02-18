@@ -157,7 +157,7 @@
     </div>
 
     <!-- Secondary Stats Row -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         <!-- Subscribers -->
         <div
             class="relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 p-6 hover:shadow-lg transition-all duration-300">
@@ -223,6 +223,50 @@
                 class="absolute -bottom-2 -right-2 w-20 h-20 rounded-full bg-gradient-to-br from-green-500/10 to-emerald-600/10 blur-xl">
             </div>
         </div>
+
+        <!-- Projects -->
+        <div
+            class="relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 p-6 hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/30">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Projects</p>
+                    <p class="text-3xl font-bold text-gray-900 dark:text-white">{{ $projects->count() }}</p>
+                </div>
+            </div>
+            <div
+                class="absolute -bottom-2 -right-2 w-20 h-20 rounded-full bg-gradient-to-br from-violet-500/10 to-purple-600/10 blur-xl">
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div
+            class="relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 p-6 hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/30">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm">Reviews</p>
+                    <p class="text-3xl font-bold text-gray-900 dark:text-white">{{ $reviews->count() }}</p>
+                </div>
+            </div>
+            <div
+                class="absolute -bottom-2 -right-2 w-20 h-20 rounded-full bg-gradient-to-br from-amber-500/10 to-orange-600/10 blur-xl">
+            </div>
+        </div>
     </div>
 
     <!-- Activity Section -->
@@ -231,7 +275,7 @@
         <div class="flex items-center justify-between mb-6">
             <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Quick Actions</h2>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
             <a href="{{ route('visitors') }}"
                 class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                 <div
@@ -288,6 +332,33 @@
                 </div>
                 <span
                     class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-white">Portfolio</span>
+            </a>
+            <a href="{{ route('admin.projects.index') }}"
+                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-violet-500 hover:to-purple-700 transition-all duration-300">
+                <div
+                    class="w-12 h-12 rounded-xl bg-violet-100 dark:bg-violet-900/30 group-hover:bg-white/20 flex items-center justify-center transition-colors">
+                    <svg class="w-6 h-6 text-violet-600 dark:text-violet-400 group-hover:text-white" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                        </path>
+                    </svg>
+                </div>
+                <span
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-white">Projects</span>
+            </a>
+            <a href="{{ route('admin.reviews.index') }}"
+                class="group flex flex-col items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-zinc-700/50 hover:bg-gradient-to-br hover:from-amber-500 hover:to-yellow-600 transition-all duration-300">
+                <div
+                    class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 group-hover:bg-white/20 flex items-center justify-center transition-colors">
+                    <svg class="w-6 h-6 text-amber-600 dark:text-amber-400 group-hover:text-white" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-white">Reviews</span>
             </a>
         </div>
     </div>

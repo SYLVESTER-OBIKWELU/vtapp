@@ -45,27 +45,30 @@
                     @php
                     $experiences = [
                     [
-                    'title' => 'Senior Full-Stack Developer',
-                    'company' => 'Tech Innovations Inc.',
+                    'title' => 'Founder & Lead Developer',
+                    'company' => 'VTAPP Digital Agency',
                     'period' => '2022 - Present',
-                    'description' => 'Leading development of enterprise web applications using Laravel, Vue.js, and AWS
-                    services.',
+                    'description' => 'Founded and lead a full-service digital agency specializing in custom web
+                    development, mobile apps, SEO, CMS solutions, and maintenance. Managing client projects end-to-end
+                    using Laravel, Vue.js, React, and Flutter.',
                     'color' => 'from-cyan-500 to-blue-500'
                     ],
                     [
                     'title' => 'Full-Stack Developer',
-                    'company' => 'Digital Solutions Ltd.',
+                    'company' => 'Freelance & Contract Work',
                     'period' => '2020 - 2022',
-                    'description' => 'Developed and maintained multiple client projects, focusing on performance
-                    optimization and clean code practices.',
+                    'description' => 'Delivered 30+ web and mobile projects for clients across Nigeria and
+                    internationally. Specialized in Laravel backends, Vue.js/React frontends, and Flutter mobile
+                    applications.',
                     'color' => 'from-blue-500 to-purple-500'
                     ],
                     [
-                    'title' => 'Junior Developer',
-                    'company' => 'StartUp Hub',
+                    'title' => 'Junior Developer & Designer',
+                    'company' => 'Self-taught & Community Projects',
                     'period' => '2019 - 2020',
-                    'description' => 'Started my professional journey building responsive websites and learning modern
-                    development practices.',
+                    'description' => 'Built foundational skills through self-directed learning, open-source
+                    contributions, and local community tech projects. Focused on HTML/CSS, JavaScript, PHP, and
+                    WordPress.',
                     'color' => 'from-purple-500 to-pink-500'
                     ],
                     ];
@@ -111,25 +114,28 @@
                     @php
                     $education = [
                     [
-                    'degree' => 'Master in Computer Science',
-                    'school' => 'MIT University',
-                    'period' => '2018 - 2019',
-                    'description' => 'Specialized in Software Engineering and Machine Learning. Graduated with honors.',
+                    'degree' => 'B.Sc. Computer Science',
+                    'school' => 'Nnamdi Azikiwe University, Awka',
+                    'period' => '2017 - 2022',
+                    'description' => 'Studied computer science with focus on software engineering, algorithms, and web
+                    technologies. Developed several academic and personal projects during this period.',
                     'color' => 'from-emerald-500 to-teal-500'
                     ],
                     [
-                    'degree' => 'Bachelor in Computer Science',
-                    'school' => 'Stanford University',
-                    'period' => '2014 - 2018',
-                    'description' => 'Comprehensive study of computer science fundamentals, algorithms, and software
-                    development.',
+                    'degree' => 'Full-Stack Web Development',
+                    'school' => 'Self-Taught & Online Platforms',
+                    'period' => '2019 - 2021',
+                    'description' => 'Intensive self-directed training in modern web development using platforms like
+                    Udemy, freeCodeCamp, and Laravel documentation. Mastered PHP, Laravel, JavaScript, React, and
+                    Vue.js.',
                     'color' => 'from-teal-500 to-cyan-500'
                     ],
                     [
-                    'degree' => 'Web Development Bootcamp',
-                    'school' => 'Udacity',
-                    'period' => '2014',
-                    'description' => 'Intensive training in modern web development technologies and best practices.',
+                    'degree' => 'Mobile App Development',
+                    'school' => 'Flutter & React Native Courses',
+                    'period' => '2021 - 2022',
+                    'description' => 'Specialized training in cross-platform mobile development with Flutter and React
+                    Native, including state management, API integration, and app deployment.',
                     'color' => 'from-cyan-500 to-blue-500'
                     ],
                     ];
@@ -167,14 +173,14 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @php
                 $certs = [
-                ['icon' => 'bi-patch-check-fill', 'title' => 'AWS Certified', 'org' => 'Amazon Web Services', 'color' =>
-                'from-orange-500 to-amber-500'],
-                ['icon' => 'bi-google', 'title' => 'Google Cloud', 'org' => 'Google', 'color' => 'from-blue-500
-                to-green-500'],
-                ['icon' => 'bi-trophy-fill', 'title' => 'Best Developer', 'org' => 'Tech Awards 2023', 'color' =>
-                'from-yellow-500 to-orange-500'],
-                ['icon' => 'bi-award-fill', 'title' => 'Laravel Expert', 'org' => 'Laravel Certified', 'color' =>
+                ['icon' => 'bi-patch-check-fill', 'title' => 'Laravel Expert', 'org' => 'Laravel Ecosystem', 'color' =>
                 'from-red-500 to-pink-500'],
+                ['icon' => 'bi-phone-fill', 'title' => 'Flutter Developer', 'org' => 'Google Flutter', 'color' =>
+                'from-blue-500 to-cyan-500'],
+                ['icon' => 'bi-trophy-fill', 'title' => 'SEO Specialist', 'org' => 'Digital Marketing', 'color' =>
+                'from-yellow-500 to-orange-500'],
+                ['icon' => 'bi-award-fill', 'title' => 'WordPress Expert', 'org' => 'CMS Development', 'color' =>
+                'from-blue-600 to-indigo-500'],
                 ];
                 @endphp
 
