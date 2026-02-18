@@ -370,7 +370,8 @@
                                 </label>
                                 <textarea wire:model="short_description" rows="2"
                                     class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-gray-900 dark:text-white"></textarea>
-                                @error('short_description') <span class="text-red-500 text-xs mt-1">{{ $message }}</span>
+                                @error('short_description') <span class="text-red-500 text-xs mt-1">{{ $message
+                                    }}</span>
                                 @enderror
                             </div>
 
@@ -392,7 +393,8 @@
                                 </label>
                                 <input type="url" wire:model="live_url"
                                     class="w-full px-4 py-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-gray-900 dark:text-white">
-                                @error('live_url') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
+                                @error('live_url') <span class="text-red-500 text-xs mt-1">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             <!-- GitHub URL -->
@@ -442,8 +444,8 @@
                                 <p class="text-sm text-gray-500 mt-1">New image selected</p>
                                 @elseif($editingProject->featured_image)
                                 <div class="mt-2">
-                                    <img src="{{ asset('storage/' . $editingProject->featured_image) }}"
-                                        alt="Current" class="h-20 rounded">
+                                    <img src="{{ asset('storage/' . $editingProject->featured_image) }}" alt="Current"
+                                        class="h-20 rounded">
                                 </div>
                                 @endif
                                 @error('featured_image') <span class="text-red-500 text-xs mt-1">{{ $message }}</span>

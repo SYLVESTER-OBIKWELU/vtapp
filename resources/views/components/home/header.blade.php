@@ -37,7 +37,15 @@
           <li>
             <a href="#features"
               class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
-              <span class="relative z-10">Features</span>
+              <span class="relative z-10">Services</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#details"
+              class="nav-link relative px-5 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group">
+              <span class="relative z-10">Process</span>
               <span
                 class="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
             </a>
@@ -91,7 +99,13 @@
       <li>
         <a href="#features"
           class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
-          Features
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="#details"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300">
+          Process
         </a>
       </li>
       <li>

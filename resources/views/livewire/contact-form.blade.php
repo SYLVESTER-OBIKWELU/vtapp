@@ -1,4 +1,5 @@
 <!-- Contact Section -->
+<div>
 <section id="contact" class="relative py-24 lg:py-32 bg-slate-800 overflow-hidden">
     <!-- Background Decorations -->
     <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-slate-800 to-transparent"></div>
@@ -7,7 +8,7 @@
 
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16" data-scroll-reveal>
+        <div class="text-center max-w-3xl mx-auto mb-16">
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 rounded-full border border-cyan-500/20 mb-6">
                 <span class="text-sm font-medium text-cyan-400">Contact</span>
@@ -18,13 +19,13 @@
                     Together</span>
             </h2>
             <p class="text-lg text-gray-400">
-                Tell us about your project, and we'll bring it to life. Reach out via the form or email us directly.
+                Ready to elevate your digital presence? Share your project details and let our expert team craft a solution tailored to your goals.
             </p>
         </div>
 
         <div class="grid lg:grid-cols-3 gap-12">
             <!-- Contact Info -->
-            <div class="space-y-6" data-scroll-reveal="left">
+            <div class="space-y-6" wire:ignore>
                 <!-- Location -->
                 <div class="card-modern group flex items-start gap-4" data-tilt>
                     <div
@@ -67,10 +68,23 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Response Time -->
+                <div class="card-modern group flex items-start gap-4" data-tilt>
+                    <div
+                        class="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-r from-emerald-400/20 to-green-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="bi bi-clock text-2xl text-emerald-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-1">Response Time</h3>
+                        <p class="text-gray-400">We reply within 24 hours</p>
+                        <p class="text-gray-500 text-sm">Mon - Sat, 9am - 6pm WAT</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Contact Form -->
-            <div class="lg:col-span-2" data-scroll-reveal="right">
+            <div class="lg:col-span-2">
                 <div class="card-modern">
                     <form wire:submit.prevent="sendMessage" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
@@ -116,14 +130,15 @@
 
                         <!-- Submit Button -->
                         <div class="flex justify-center">
-                            <button type="submit" class="btn-modern group w-full md:w-auto" data-magnetic data-ripple
+                            <button type="submit" class="btn-modern group w-full md:w-auto"
+                                wire:loading.attr="disabled"
                                 wire:loading.class="opacity-75 cursor-not-allowed">
                                 <span class="relative z-10 flex items-center justify-center gap-2">
-                                    <span wire:loading.remove>Send Message</span>
-                                    <span wire:loading>Sending...</span>
+                                    <span wire:loading.remove wire:target="sendMessage">Send Message</span>
+                                    <span wire:loading wire:target="sendMessage">Sending...</span>
                                     <i class="bi bi-send transform group-hover:translate-x-1 transition-transform duration-300"
-                                        wire:loading.remove></i>
-                                    <i class="bi bi-arrow-repeat animate-spin" wire:loading></i>
+                                        wire:loading.remove wire:target="sendMessage"></i>
+                                    <i class="bi bi-arrow-repeat animate-spin" wire:loading wire:target="sendMessage"></i>
                                 </span>
                             </button>
                         </div>
@@ -133,4 +148,5 @@
         </div>
     </div>
 </section>
+</div>
 <!-- /Contact Section -->
