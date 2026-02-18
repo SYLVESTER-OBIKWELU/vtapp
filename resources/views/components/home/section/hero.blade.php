@@ -48,7 +48,9 @@
         </h1>
 
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-          VTAPP is a full-service <span class="text-cyan-400">web agency</span> specializing in website development, mobile apps, SEO, CMS management, and ongoing maintenance. We help businesses launch, grow, and dominate online.
+          VTAPP is a full-service <span class="text-cyan-400">web agency</span> specializing in website development,
+          mobile apps, SEO, CMS management, and ongoing maintenance. We help businesses launch, grow, and dominate
+          online.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

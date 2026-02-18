@@ -23,35 +23,51 @@
           $faqs = [
           [
           'question' => 'What services does VTAPP offer?',
-          'answer' => 'We offer custom website development, mobile app development (Flutter & React Native), SEO optimization, CMS solutions (WordPress, custom CMS), UI/UX design, website maintenance & support, performance optimization, and security & compliance audits. We\'re your full-service digital agency partner.'
+          'answer' => 'We offer custom website development, mobile app development (Flutter & React Native), SEO
+          optimization, CMS solutions (WordPress, custom CMS), UI/UX design, website maintenance & support, performance
+          optimization, and security & compliance audits. We\'re your full-service digital agency partner.'
           ],
           [
           'question' => 'How much does it cost to build a website or app?',
-          'answer' => 'Pricing depends on the scope, features, and complexity of your project. A basic business website may start from $1,500, while a custom web app or mobile application can range from $5,000–$25,000+. We offer flexible payment plans and always provide a free, detailed quote before any commitment.'
+          'answer' => 'Pricing depends on the scope, features, and complexity of your project. A basic business website
+          may start from $1,500, while a custom web app or mobile application can range from $5,000–$25,000+. We offer
+          flexible payment plans and always provide a free, detailed quote before any commitment.'
           ],
           [
           'question' => 'How long does a typical project take?',
-          'answer' => 'A standard business website takes 2–4 weeks. E-commerce sites and web applications typically take 6–10 weeks. Mobile apps usually range from 8–16 weeks depending on features. After our discovery call, we\'ll provide a detailed timeline with milestones so you always know where your project stands.'
+          'answer' => 'A standard business website takes 2–4 weeks. E-commerce sites and web applications typically take
+          6–10 weeks. Mobile apps usually range from 8–16 weeks depending on features. After our discovery call, we\'ll
+          provide a detailed timeline with milestones so you always know where your project stands.'
           ],
           [
           'question' => 'Do you provide SEO services?',
-          'answer' => 'Absolutely! Every website we build includes on-page SEO fundamentals — optimized meta tags, structured data, fast load times, mobile responsiveness, and clean URLs. We also offer ongoing SEO packages including keyword research, content strategy, link building, local SEO, and monthly performance reports.'
+          'answer' => 'Absolutely! Every website we build includes on-page SEO fundamentals — optimized meta tags,
+          structured data, fast load times, mobile responsiveness, and clean URLs. We also offer ongoing SEO packages
+          including keyword research, content strategy, link building, local SEO, and monthly performance reports.'
           ],
           [
           'question' => 'Do you offer ongoing maintenance and support?',
-          'answer' => 'Yes! We offer flexible maintenance packages that include security updates, plugin/dependency updates, uptime monitoring, regular backups, performance optimization, bug fixes, and priority support. Our standard response time is under 2 hours for critical issues, with 24/7 monitoring.'
+          'answer' => 'Yes! We offer flexible maintenance packages that include security updates, plugin/dependency
+          updates, uptime monitoring, regular backups, performance optimization, bug fixes, and priority support. Our
+          standard response time is under 2 hours for critical issues, with 24/7 monitoring.'
           ],
           [
           'question' => 'Can you help with an existing website or app?',
-          'answer' => 'Absolutely. We specialize in redesigns, migrations, performance audits, and feature additions for existing digital products. Whether you need a complete overhaul, a CMS migration (e.g., to WordPress or a custom Laravel CMS), or just optimization and maintenance — we can help.'
+          'answer' => 'Absolutely. We specialize in redesigns, migrations, performance audits, and feature additions for
+          existing digital products. Whether you need a complete overhaul, a CMS migration (e.g., to WordPress or a
+          custom Laravel CMS), or just optimization and maintenance — we can help.'
           ],
           [
           'question' => 'What technologies do you work with?',
-          'answer' => 'Frontend: HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS | Backend: PHP, Laravel, Node.js | Mobile: Flutter, React Native | CMS: WordPress, Custom CMS | Database: MySQL, PostgreSQL | DevOps: Docker, AWS, DigitalOcean | Design: Figma, Adobe XD'
+          'answer' => 'Frontend: HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS | Backend: PHP, Laravel, Node.js |
+          Mobile: Flutter, React Native | CMS: WordPress, Custom CMS | Database: MySQL, PostgreSQL | DevOps: Docker,
+          AWS, DigitalOcean | Design: Figma, Adobe XD'
           ],
           [
           'question' => 'Do you work with startups and small businesses?',
-          'answer' => 'We work with businesses of all sizes — from solo entrepreneurs and startups building their first MVP, to established companies needing enterprise-grade solutions. We tailor our approach and pricing to match your stage and budget. Every client gets the same quality and dedication.'
+          'answer' => 'We work with businesses of all sizes — from solo entrepreneurs and startups building their first
+          MVP, to established companies needing enterprise-grade solutions. We tailor our approach and pricing to match
+          your stage and budget. Every client gets the same quality and dedication.'
           ],
           ];
           @endphp

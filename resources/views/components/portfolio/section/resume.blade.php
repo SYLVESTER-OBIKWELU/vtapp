@@ -48,21 +48,27 @@
                     'title' => 'Founder & Lead Developer',
                     'company' => 'VTAPP Digital Agency',
                     'period' => '2022 - Present',
-                    'description' => 'Founded and lead a full-service digital agency specializing in custom web development, mobile apps, SEO, CMS solutions, and maintenance. Managing client projects end-to-end using Laravel, Vue.js, React, and Flutter.',
+                    'description' => 'Founded and lead a full-service digital agency specializing in custom web
+                    development, mobile apps, SEO, CMS solutions, and maintenance. Managing client projects end-to-end
+                    using Laravel, Vue.js, React, and Flutter.',
                     'color' => 'from-cyan-500 to-blue-500'
                     ],
                     [
                     'title' => 'Full-Stack Developer',
                     'company' => 'Freelance & Contract Work',
                     'period' => '2020 - 2022',
-                    'description' => 'Delivered 30+ web and mobile projects for clients across Nigeria and internationally. Specialized in Laravel backends, Vue.js/React frontends, and Flutter mobile applications.',
+                    'description' => 'Delivered 30+ web and mobile projects for clients across Nigeria and
+                    internationally. Specialized in Laravel backends, Vue.js/React frontends, and Flutter mobile
+                    applications.',
                     'color' => 'from-blue-500 to-purple-500'
                     ],
                     [
                     'title' => 'Junior Developer & Designer',
                     'company' => 'Self-taught & Community Projects',
                     'period' => '2019 - 2020',
-                    'description' => 'Built foundational skills through self-directed learning, open-source contributions, and local community tech projects. Focused on HTML/CSS, JavaScript, PHP, and WordPress.',
+                    'description' => 'Built foundational skills through self-directed learning, open-source
+                    contributions, and local community tech projects. Focused on HTML/CSS, JavaScript, PHP, and
+                    WordPress.',
                     'color' => 'from-purple-500 to-pink-500'
                     ],
                     ];
@@ -111,21 +117,25 @@
                     'degree' => 'B.Sc. Computer Science',
                     'school' => 'Nnamdi Azikiwe University, Awka',
                     'period' => '2017 - 2022',
-                    'description' => 'Studied computer science with focus on software engineering, algorithms, and web technologies. Developed several academic and personal projects during this period.',
+                    'description' => 'Studied computer science with focus on software engineering, algorithms, and web
+                    technologies. Developed several academic and personal projects during this period.',
                     'color' => 'from-emerald-500 to-teal-500'
                     ],
                     [
                     'degree' => 'Full-Stack Web Development',
                     'school' => 'Self-Taught & Online Platforms',
                     'period' => '2019 - 2021',
-                    'description' => 'Intensive self-directed training in modern web development using platforms like Udemy, freeCodeCamp, and Laravel documentation. Mastered PHP, Laravel, JavaScript, React, and Vue.js.',
+                    'description' => 'Intensive self-directed training in modern web development using platforms like
+                    Udemy, freeCodeCamp, and Laravel documentation. Mastered PHP, Laravel, JavaScript, React, and
+                    Vue.js.',
                     'color' => 'from-teal-500 to-cyan-500'
                     ],
                     [
                     'degree' => 'Mobile App Development',
                     'school' => 'Flutter & React Native Courses',
                     'period' => '2021 - 2022',
-                    'description' => 'Specialized training in cross-platform mobile development with Flutter and React Native, including state management, API integration, and app deployment.',
+                    'description' => 'Specialized training in cross-platform mobile development with Flutter and React
+                    Native, including state management, API integration, and app deployment.',
                     'color' => 'from-cyan-500 to-blue-500'
                     ],
                     ];

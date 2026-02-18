@@ -18,11 +18,12 @@
         <span class="text-sm font-medium text-purple-400">Our Services</span>
       </div>
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-        Full-Service <span
-          class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Digital Solutions</span>
+        Full-Service <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Digital
+          Solutions</span>
       </h2>
       <p class="text-lg text-gray-400">
-        From concept to launch and beyond — we handle every aspect of your digital presence so you can focus on growing your business.
+        From concept to launch and beyond — we handle every aspect of your digital presence so you can focus on growing
+        your business.
       </p>
     </div>
 
@@ -30,14 +31,26 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
       @php
       $features = [
-      ['icon' => 'bi-globe', 'title' => 'Website Development', 'desc' => 'Custom responsive websites built with modern frameworks. From corporate sites to e-commerce platforms.', 'color' => 'from-cyan-400 to-blue-500', 'delay' => '0'],
-      ['icon' => 'bi-phone', 'title' => 'Mobile App Development', 'desc' => 'Native & cross-platform mobile apps for iOS and Android. Flutter, React Native, and more.', 'color' => 'from-purple-400 to-pink-500', 'delay' => '0.1'],
-      ['icon' => 'bi-search', 'title' => 'SEO Optimization', 'desc' => 'Boost your search engine rankings with our proven SEO strategies, keyword research, and on-page optimization.', 'color' => 'from-emerald-400 to-teal-500', 'delay' => '0.2'],
-      ['icon' => 'bi-wordpress', 'title' => 'CMS Solutions', 'desc' => 'WordPress, custom CMS, and headless solutions that give you full control over your content.', 'color' => 'from-blue-400 to-indigo-500', 'delay' => '0.3'],
-      ['icon' => 'bi-wrench-adjustable', 'title' => 'Website Maintenance', 'desc' => 'Keep your site running at peak performance with our 24/7 monitoring, updates, and security patches.', 'color' => 'from-orange-400 to-red-500', 'delay' => '0.4'],
-      ['icon' => 'bi-speedometer2', 'title' => 'Performance Optimization', 'desc' => 'Page speed audits, caching, code optimization, and CDN setup for lightning-fast load times.', 'color' => 'from-yellow-400 to-orange-500', 'delay' => '0.5'],
-      ['icon' => 'bi-palette', 'title' => 'UI/UX Design', 'desc' => 'Beautiful, intuitive interfaces designed with your users in mind. Wireframes to high-fidelity mockups.', 'color' => 'from-pink-400 to-rose-500', 'delay' => '0.6'],
-      ['icon' => 'bi-shield-check', 'title' => 'Security & Compliance', 'desc' => 'SSL certificates, malware scanning, GDPR compliance, and secure hosting configurations.', 'color' => 'from-teal-400 to-cyan-500', 'delay' => '0.7'],
+      ['icon' => 'bi-globe', 'title' => 'Website Development', 'desc' => 'Custom responsive websites built with modern
+      frameworks. From corporate sites to e-commerce platforms.', 'color' => 'from-cyan-400 to-blue-500', 'delay' =>
+      '0'],
+      ['icon' => 'bi-phone', 'title' => 'Mobile App Development', 'desc' => 'Native & cross-platform mobile apps for iOS
+      and Android. Flutter, React Native, and more.', 'color' => 'from-purple-400 to-pink-500', 'delay' => '0.1'],
+      ['icon' => 'bi-search', 'title' => 'SEO Optimization', 'desc' => 'Boost your search engine rankings with our
+      proven SEO strategies, keyword research, and on-page optimization.', 'color' => 'from-emerald-400 to-teal-500',
+      'delay' => '0.2'],
+      ['icon' => 'bi-wordpress', 'title' => 'CMS Solutions', 'desc' => 'WordPress, custom CMS, and headless solutions
+      that give you full control over your content.', 'color' => 'from-blue-400 to-indigo-500', 'delay' => '0.3'],
+      ['icon' => 'bi-wrench-adjustable', 'title' => 'Website Maintenance', 'desc' => 'Keep your site running at peak
+      performance with our 24/7 monitoring, updates, and security patches.', 'color' => 'from-orange-400 to-red-500',
+      'delay' => '0.4'],
+      ['icon' => 'bi-speedometer2', 'title' => 'Performance Optimization', 'desc' => 'Page speed audits, caching, code
+      optimization, and CDN setup for lightning-fast load times.', 'color' => 'from-yellow-400 to-orange-500', 'delay'
+      => '0.5'],
+      ['icon' => 'bi-palette', 'title' => 'UI/UX Design', 'desc' => 'Beautiful, intuitive interfaces designed with your
+      users in mind. Wireframes to high-fidelity mockups.', 'color' => 'from-pink-400 to-rose-500', 'delay' => '0.6'],
+      ['icon' => 'bi-shield-check', 'title' => 'Security & Compliance', 'desc' => 'SSL certificates, malware scanning,
+      GDPR compliance, and secure hosting configurations.', 'color' => 'from-teal-400 to-cyan-500', 'delay' => '0.7'],
       ];
       @endphp
 

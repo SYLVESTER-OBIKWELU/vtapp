@@ -67,10 +67,14 @@
                 <div class="space-y-4">
                     <h3 class="text-2xl font-bold text-white">Full-Stack Developer & Digital Agency Founder</h3>
                     <p class="text-gray-300 leading-relaxed">
-                        I'm Sylvester Obikwelu — a passionate full-stack developer and the founder of VTAPP, a digital agency specializing in custom web development, mobile applications, SEO optimization, and CMS solutions. I turn business ideas into high-performing digital products.
+                        I'm Sylvester Obikwelu — a passionate full-stack developer and the founder of VTAPP, a digital
+                        agency specializing in custom web development, mobile applications, SEO optimization, and CMS
+                        solutions. I turn business ideas into high-performing digital products.
                     </p>
                     <p class="text-gray-400 leading-relaxed">
-                        With expertise across Laravel, React, Vue.js, Flutter, and WordPress, I deliver end-to-end solutions — from strategy and design to development, deployment, and ongoing maintenance. My mission is helping businesses grow through technology that works.
+                        With expertise across Laravel, React, Vue.js, Flutter, and WordPress, I deliver end-to-end
+                        solutions — from strategy and design to development, deployment, and ongoing maintenance. My
+                        mission is helping businesses grow through technology that works.
                     </p>
                 </div>
 

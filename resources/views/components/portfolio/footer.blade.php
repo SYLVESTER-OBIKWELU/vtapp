@@ -20,7 +20,8 @@
                     </span>
                 </a>
                 <p class="text-gray-400 mb-6 max-w-md leading-relaxed">
-                    Full-Stack Developer & Founder of VTAPP Digital Agency. Specializing in custom web development, mobile apps, SEO, CMS solutions, and ongoing maintenance. Let's build something amazing together.
+                    Full-Stack Developer & Founder of VTAPP Digital Agency. Specializing in custom web development,
+                    mobile apps, SEO, CMS solutions, and ongoing maintenance. Let's build something amazing together.
                 </p>
 
                 <!-- Social Links -->
@@ -112,7 +113,8 @@
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="bi bi-telephone text-cyan-400 mt-1"></i>
-                        <a href="tel:+2347018508896" class="text-gray-400 hover:text-cyan-400 transition-colors">+234 701 850 8896</a>
+                        <a href="tel:+2347018508896" class="text-gray-400 hover:text-cyan-400 transition-colors">+234
+                            701 850 8896</a>
                     </li>
                 </ul>
 
@@ -130,7 +132,8 @@
         <div class="container mx-auto px-6 lg:px-12 py-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-gray-500 text-sm text-center md:text-left">
-                    &copy; {{ date('Y') }} <span class="text-cyan-400">Sylvester Obikwelu</span>. All rights reserved. Built with <span class="text-cyan-400">VTAPP</span>.
+                    &copy; {{ date('Y') }} <span class="text-cyan-400">Sylvester Obikwelu</span>. All rights reserved.
+                    Built with <span class="text-cyan-400">VTAPP</span>.
                 </p>
                 <div class="flex items-center gap-6 text-sm">
                     <a href="#" class="text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>

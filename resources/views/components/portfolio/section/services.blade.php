@@ -44,42 +44,48 @@
             [
             'icon' => 'bi-code-square',
             'title' => 'Custom Web Development',
-            'description' => 'Building fast, responsive, SEO-optimized websites and web applications using Laravel, React, Vue.js, and Tailwind CSS.',
+            'description' => 'Building fast, responsive, SEO-optimized websites and web applications using Laravel,
+            React, Vue.js, and Tailwind CSS.',
             'features' => ['Custom Web Apps', 'E-commerce Solutions', 'SaaS Platforms'],
             'color' => 'from-cyan-500 to-blue-500'
             ],
             [
             'icon' => 'bi-phone',
             'title' => 'Mobile App Development',
-            'description' => 'Creating cross-platform mobile apps with Flutter and React Native for iOS and Android with seamless UX.',
+            'description' => 'Creating cross-platform mobile apps with Flutter and React Native for iOS and Android with
+            seamless UX.',
             'features' => ['iOS & Android Apps', 'Flutter & React Native', 'App Store Deployment'],
             'color' => 'from-purple-500 to-pink-500'
             ],
             [
             'icon' => 'bi-search',
             'title' => 'SEO & Digital Marketing',
-            'description' => 'Boosting your search rankings with on-page SEO, technical audits, keyword research, content strategy, and link building.',
+            'description' => 'Boosting your search rankings with on-page SEO, technical audits, keyword research,
+            content strategy, and link building.',
             'features' => ['Technical SEO Audit', 'Keyword Research', 'Monthly Reports'],
             'color' => 'from-emerald-500 to-teal-500'
             ],
             [
             'icon' => 'bi-wordpress',
             'title' => 'CMS & WordPress Solutions',
-            'description' => 'Custom WordPress themes, plugins, and headless CMS integrations. Full site setup, migration, and optimization.',
+            'description' => 'Custom WordPress themes, plugins, and headless CMS integrations. Full site setup,
+            migration, and optimization.',
             'features' => ['Custom Themes', 'Plugin Development', 'CMS Migration'],
             'color' => 'from-blue-600 to-indigo-500'
             ],
             [
             'icon' => 'bi-wrench-adjustable',
             'title' => 'Maintenance & Support',
-            'description' => 'Ongoing website and app maintenance including security updates, performance monitoring, backups, and 24/7 uptime watching.',
+            'description' => 'Ongoing website and app maintenance including security updates, performance monitoring,
+            backups, and 24/7 uptime watching.',
             'features' => ['Security Updates', '24/7 Monitoring', 'Performance Optimization'],
             'color' => 'from-amber-500 to-orange-500'
             ],
             [
             'icon' => 'bi-palette',
             'title' => 'UI/UX Design & Branding',
-            'description' => 'User-centric interface design, wireframing, prototyping, and brand identity that converts visitors into customers.',
+            'description' => 'User-centric interface design, wireframing, prototyping, and brand identity that converts
+            visitors into customers.',
             'features' => ['Figma Prototypes', 'User Research', 'Brand Identity'],
             'color' => 'from-pink-500 to-rose-500'
             ],
